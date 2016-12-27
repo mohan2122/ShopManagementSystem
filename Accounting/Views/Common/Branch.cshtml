@@ -1,0 +1,89 @@
+﻿@model Repository.Branch
+@{
+    ViewBag.Title = "Branch";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/Branch.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Branch</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.BranchID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.CompanyID, (SelectList)ViewData["VdCompanyList"], "--------Choose Company-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.BankID, "Bank Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.BankID, (SelectList)ViewData["VdBankList"], "--------Choose Bank-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.BranchName, "Branch Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.BranchName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Address)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Address, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Phone, "Phone No.")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Mobile, "Mobile No.")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Mobile, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Email)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblBrain"></table>
+                <div id="BrainPager"></div>
+            </div>
+        </div>
+    </div> 
+}
+

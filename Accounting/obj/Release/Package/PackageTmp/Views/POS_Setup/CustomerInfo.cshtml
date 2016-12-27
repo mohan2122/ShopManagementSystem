@@ -1,0 +1,142 @@
+﻿@model Repository.CustomerInfo
+@{
+    ViewBag.Title = "Customer Information";
+}
+
+<script src="~/Scripts/ApplicationJS/Pos_Setup/CustomarInfo.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Customer Information</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.CustomerID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CustomerCode, "Customer Code")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.CustomerCode, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CustomerName, "Customer Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.CustomerName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CustomerType, "Customer Type")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.CustomerType, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Propietor)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Propietor, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ContactPerson, "Contact Person")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ContactPerson, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Address)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Address, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DistrictID, "City")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.DistrictID, (SelectList)ViewData["VdDistrictList"], "-------Choose City-------")
+                </div>
+            </div>
+
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CountryID, "Country Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.CountryID, (SelectList)ViewData["VdCountryList"], "---ChooseCountry---")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Phone, "Phone No:")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+
+                    @Html.LabelFor(m => m.Mobile, "Mobile No:")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Mobile, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.eMail, "Email Address")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.eMail, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATRegNo, "VAT Reg: No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATRegNo, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DiscountPercent, "Discount Percent")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.DiscountPercent, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DistributorPoint, "Distributor Point")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.DistributorPoint, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblCustomerInfo"></table>
+                <div id="divCustomerInfoPager"></div>
+            </div>
+        </div>
+    </div>  
+    
+    
+    
+}

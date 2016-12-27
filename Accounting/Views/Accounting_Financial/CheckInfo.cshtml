@@ -1,0 +1,66 @@
+﻿@model Repository.CheckInfo
+@{
+    ViewBag.Title = "Checque Info";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_financial/CheckInfo.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Check Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.CheckID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.CompanyID, (SelectList)ViewData["VdCompanyList"], "--------Choose Company-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.BankID, "Bank Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.BankID, (SelectList)ViewData["VdBankList"], "--------Choose Bank-----------------")
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ChequeStart, "Cheque Start")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ChequeStart, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ChequeEnd, "Cheque End")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ChequeEnd, new { @class = "required" })
+                </div>
+            </div>
+            
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.TotalPage, "Total Page")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.TotalPage, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblCheckInfo"></table>
+                <div id="divCheckInfoPager"></div>
+            </div>
+        </div>
+    </div> 
+}

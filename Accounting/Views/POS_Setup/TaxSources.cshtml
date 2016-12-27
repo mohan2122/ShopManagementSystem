@@ -1,0 +1,84 @@
+﻿@model Repository.TaxSource
+@{
+    ViewBag.Title = "TaxSources";
+}
+
+
+
+
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Tax Sources</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.SourceID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SourceCode, "Source Code")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SourceCode, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SourceName, "Source Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SourceName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.StartAmount, "Start Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.StartAmount, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.EndAmount, "End Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.EndAmount, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATPercent, "Vat Percent")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATPercent, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Rebate, "Re-Vat")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Rebate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SourceType, "Source Type")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SourceType, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblTaxSource"></table>
+                <div id="TaxSourcePager"></div>
+            </div>
+        </div>
+    </div>
+    
+} 

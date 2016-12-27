@@ -1,0 +1,34 @@
+﻿@model Repository.Department
+@{
+    ViewBag.Title = "";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/Deparment.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Department</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.DepartmentID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DepartmentName)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.DepartmentName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblDepartment"></table>
+                <div id="DepartmentPager"></div>
+            </div>
+        </div>
+    </div>
+     
+}

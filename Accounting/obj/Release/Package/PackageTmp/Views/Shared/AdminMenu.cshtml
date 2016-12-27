@@ -1,0 +1,96 @@
+﻿<ul class="pureCssMenu pureCssMenum pureBottomBorder">
+    
+    @*<li class="pureCssMenui0">
+        <a class="pureCssMenui0" href="#">
+            <span class="members_menu_icon">POS</span><![if gt IE 6]>
+        </a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui">@Html.ActionLink("VAT Type", "VAT Type", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Tarrif Type", "TarrifType", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Product Info", "ProductInfo", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Brand", "Brand", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Product Category", "ProductCategory", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Unit", "Unit", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Customer Info", "CustomerInfo", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Expense Info", "ExpenseInfo", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Tax Sources", "TaxSources", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Product Consumption", "ProductionConsum", "POS_Production")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Supplier Info", "SupplierInfo", "POS_Setup")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Adjustment Type", "Adjustment Type", "POS_Adjustment")</li>
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+    </li>*@
+    <li class="pureCssMenui0">
+        <a class="pureCssMenui0" href="#">
+            <span class="members_menu_icon">Set Up</span><![if gt IE 6]>
+        </a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui">@Html.ActionLink("Company Info", "Companyinfo", "Common")</li>            
+            <li class="pureCssMenui">@Html.ActionLink("Project Info", "AccProject", "Accounting_Financial")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Bank", "Bank", "Common")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Branch", "Branch", "Common")</li>            
+           @* <li class="pureCssMenui">@Html.ActionLink("Country", "CountryInfo", "Common")</li>
+            <li class="pureCssMenui">@Html.ActionLink("District", "District", "Common")</li> 
+            <li class="pureCssMenui">@Html.ActionLink("Division", "TblDivision", "Common")</li>      
+            <li class="pureCssMenui">@Html.ActionLink("Upozilla", "Upozilla", "Common")</li>      
+            <li class="pureCssMenui">@Html.ActionLink("Union", "UnionInfo", "Common")</li>      
+            <li class="pureCssMenui">@Html.ActionLink("Ward", "Ward", "Common")</li>      
+            <li class="pureCssMenui">@Html.ActionLink("Village", "VillageInfo", "Common")</li>  
+            <li class="pureCssMenui">@Html.ActionLink("Department", "Department", "Common")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Designation", "TblDesignation", "Common")</li> 
+            <li class="pureCssMenui">@Html.ActionLink("Color", "ColorInfo", "Common")</li> 
+            <li class="pureCssMenui">@Html.ActionLink("Size", "SizeInfo", "Common")</li>  *@                       
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+    </li>
+    
+    <li class="pureCssMenui0">
+        <a class="pureCssMenui0" href="#">
+            <span class="settings_menu_icon">Accounting</span>
+            <![if gt IE 6]>
+        </a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            
+            <li class="pureCssMenui">@Html.ActionLink("Account Type", "AccType", "Accounting_Financial")</li>            
+            <li class="pureCssMenui">@Html.ActionLink("Account Group", "AccGroup", "Accounting_Financial")</li>            
+            <li class="pureCssMenui">@Html.ActionLink("Account Head", "AccHead", "Accounting_Financial")</li>            
+            <li class="pureCssMenui">@Html.ActionLink("Payment Type", "PaymentType", "Accounting_Financial")</li>            
+            <li class="pureCssMenui">@Html.ActionLink("Voucher Type", "VoucherType", "Accounting_Financial")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Budget", "AccBudget", "Accounting_Budget")</li>
+            @*<li class="pureCssMenui">@Html.ActionLink("Quarter Budget", "AccQuarterBudget", "Accounting_Budget")</li>*@            
+            <li class="pureCssMenui">@Html.ActionLink("General Ledger", "AccGeneralLedger", "Accounting_Financial")</li>          
+            <li class="pureCssMenui">@Html.ActionLink("Bank Reconsilation", "BankReconcilation", "Accounting_Financial")</li>
+            @*<li class="pureCssMenui">@Html.ActionLink("Check Info", "CheckInfo", "Accounting_Financial")</li>*@
+             @* <li class="pureCssMenui">@Html.ActionLink("Cheque Payment", "AccChequePayment", "Accounting_Financial")</li>*@
+           
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+    </li>
+    @*<li class="pureCssMenui0">
+        <a class="pureCssMenui0" href="#">
+            <span class="members_menu_icon">Purchase</span><![if gt IE 6]>
+        </a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui">@Html.ActionLink("Purchase", "PurchaseItem", "POS_Purchase")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Purchase Return", "PurchaseReturn", "POS_Purchase")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Sales", "SalesItem", "POS_Sales")</li> 
+            <li class="pureCssMenui">@Html.ActionLink("Sales Return", "SalesReturn", "POS_Sales")</li>          
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+    </li>*@
+     <li class="pureCssMenui0">
+        <a class="pureCssMenui0" href="#">
+            <span class="members_menu_icon">Reports</span><![if gt IE 6]>
+        </a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui">@Html.ActionLink("Budget", "Budget", "Reporting")</li>
+            @*<li class="pureCssMenui">@Html.ActionLink("Payment Type", "PaymentType", "Reporting")</li>*@
+            <li class="pureCssMenui">@Html.ActionLink("Profit/Loss", "vAccPrifitLose", "Reporting")</li> 
+            <li class="pureCssMenui">@Html.ActionLink("Balance Sheet", "vAccBalanceSheet", "Reporting")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Trial Balance", "vAccTrialBalance", "Reporting")</li>
+            <li class="pureCssMenui">@Html.ActionLink("Chart of Account", "vAccChartofAccount", "Reporting")</li>
+            <li class="pureCssMenui">@Html.ActionLink("General Ledger", "vAccGeneralLedger", "Reporting")</li>                                           
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+    </li>
+</ul>

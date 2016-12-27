@@ -1,0 +1,249 @@
+E:\All MVC projects\Accounting\Repository\bin\Debug\Repository.dll.config
+E:\All MVC projects\Accounting\Repository\bin\Debug\Repository.dll
+E:\All MVC projects\Accounting\Repository\bin\Debug\Repository.pdb
+E:\All MVC projects\Accounting\Repository\bin\Debug\EntityFramework.dll
+E:\All MVC projects\Accounting\Repository\bin\Debug\EntityFramework.xml
+E:\All MVC projects\Accounting\Repository\obj\Debug\Repository.dll
+E:\All MVC projects\Accounting\Repository\obj\Debug\Repository.pdb
+D:\DSL\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+D:\DSL\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+D:\DSL\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+D:\DSL\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+D:\DSL\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+D:\DSL\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+D:\DSL\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+E:\Works\DSL\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+E:\Works\DSL\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+E:\Works\DSL\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+E:\Works\DSL\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+E:\Works\DSL\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+E:\Works\DSL\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+E:\Works\DSL\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+F:\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+F:\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+F:\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+F:\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+F:\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+F:\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+F:\eBusiness\Accounting\Repository\bin\Debug\Newtonsoft.Json.dll
+F:\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+F:\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+F:\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+F:\eBusiness\Accounting\Repository\bin\Debug\Newtonsoft.Json.xml
+F:\eBusiness\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+F:\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+F:\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+D:\DSL-e Business\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+D:\DSL-e Business\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+D:\DSL-e Business\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+D:\Project1\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+D:\Project1\eBusiness\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+D:\Project1\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+D:\Project1\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+E:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+E:\All MVC projects\eBusiness\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\All MVC projects\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+E:\All MVC projects\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\Repository.dll.config
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\Repository.dll
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\Repository.pdb
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\EntityFramework.dll
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\System.Web.Http.dll
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\EntityFramework.xml
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\System.Web.Http.xml
+F:\19.2.14\mohsin\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+F:\19.2.14\mohsin\Accounting\Repository\obj\Debug\Repository.dll
+F:\19.2.14\mohsin\Accounting\Repository\obj\Debug\Repository.pdb
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+G:\All MVC projects\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+G:\All MVC projects\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+G:\All MVC projects\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+D:\Accounting\Repository\bin\Debug\Repository.dll.config
+D:\Accounting\Repository\bin\Debug\Repository.dll
+D:\Accounting\Repository\bin\Debug\Repository.pdb
+D:\Accounting\Repository\bin\Debug\EntityFramework.dll
+D:\Accounting\Repository\bin\Debug\System.Web.Http.dll
+D:\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+D:\Accounting\Repository\bin\Debug\EntityFramework.xml
+D:\Accounting\Repository\bin\Debug\System.Web.Http.xml
+D:\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+D:\Accounting\Repository\obj\Debug\Repository.dll
+D:\Accounting\Repository\obj\Debug\Repository.pdb
+D:\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+G:\All MVC projects\eBusiness\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+D:\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+D:\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+D:\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+D:\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+D:\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+D:\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+D:\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+D:\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+D:\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+D:\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+D:\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+D:\eBusiness\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\eBusiness\Accounting\Repository\bin\Debug\Repository.dll.config
+E:\eBusiness\Accounting\Repository\bin\Debug\Repository.dll
+E:\eBusiness\Accounting\Repository\bin\Debug\Repository.pdb
+E:\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.dll
+E:\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.dll
+E:\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+E:\eBusiness\Accounting\Repository\bin\Debug\EntityFramework.xml
+E:\eBusiness\Accounting\Repository\bin\Debug\System.Web.Http.xml
+E:\eBusiness\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+E:\eBusiness\Accounting\Repository\obj\Debug\Repository.dll
+E:\eBusiness\Accounting\Repository\obj\Debug\Repository.pdb
+E:\eBusiness\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Repository.dll.config
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Repository.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Repository.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\EntityFramework.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Web.Http.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\EntityFramework.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Web.Http.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Net.Http.Formatting.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\obj\Debug\Repository.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\obj\Debug\Repository.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Accounting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Web.Optimization.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\StructureMap.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\WebActivator.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Web.Http.WebHost.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\WebGrease.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Antlr3.Runtime.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Accounting.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\StructureMap.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\StructureMap.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\System.Web.Http.WebHost.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Repository\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Repository.dll.config
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Repository.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Repository.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Accounting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\EntityFramework.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Web.Optimization.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\StructureMap.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\WebActivator.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.WebHost.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Net.Http.Formatting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\WebGrease.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Antlr3.Runtime.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Accounting.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\EntityFramework.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\StructureMap.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\StructureMap.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.WebHost.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\System.Net.Http.Formatting.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\obj\Debug\Repository.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Repository\obj\Debug\Repository.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Repository.dll.config
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Repository.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Repository.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Accounting.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\EntityFramework.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Web.Optimization.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\StructureMap.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\WebActivator.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.WebHost.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Net.Http.Formatting.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\WebGrease.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Antlr3.Runtime.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Accounting.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\EntityFramework.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\StructureMap.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\StructureMap.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Web.Http.WebHost.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\System.Net.Http.Formatting.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\obj\Debug\Repository.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Repository\obj\Debug\Repository.pdb

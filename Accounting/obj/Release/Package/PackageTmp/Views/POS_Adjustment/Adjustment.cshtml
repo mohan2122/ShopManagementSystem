@@ -1,0 +1,80 @@
+﻿@model Repository.MainAdjustment
+@{
+    ViewBag.Title = "Adjustment";
+}
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Adjustment</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.adjustment.AdjustmentDate, "Adjustment Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.adjustment.AdjustmentDate)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.adjustment.AdjustmentTypeID, "Adjustment Type")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.adjustment.AdjustmentTypeID, (SelectList)ViewData["VdListAdjust"], "--------Choose AdjustmentType-----------", new { @class = "required" })
+                </div>
+            </div>
+           
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.adjustment.Reason, "Reason")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.adjustment.Reason)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.ProductCode, "ProductCode")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.productInfo.ProductCode)
+                </div>
+            </div> 
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Price, "Price")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Price)
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Quantity, "Quantity")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Quantity)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Total, "Total")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Total)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAdjustment"></table>
+                <div id="AdjustmentPager"></div>
+            </div>
+        </div>
+    </div>
+    
+}

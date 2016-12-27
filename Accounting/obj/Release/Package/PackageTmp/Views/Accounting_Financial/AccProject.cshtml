@@ -1,0 +1,43 @@
+﻿@model Repository.AccProject
+
+@{
+    ViewBag.Title = "Project Info";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_financial/AccProject.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Project Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.AccProjectID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.CompanyID, (SelectList)ViewData["vdCompanyInfo"], "--------Choose Company-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProjectName, "Project Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ProjectName, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAccProject"></table>
+                <div id="AccProjectPager"></div>
+            </div>
+        </div>
+    </div> 
+
+}

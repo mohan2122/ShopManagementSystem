@@ -1,0 +1,34 @@
+﻿@model Repository.TblDivision
+
+@{
+    ViewBag.Title = "";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/Division.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Division</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.DivisionID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DivisionName)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.DivisionName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblTblDivision"></table>
+                <div id="TblDivisionPager"></div>
+            </div>
+        </div>
+    </div> 
+    
+}

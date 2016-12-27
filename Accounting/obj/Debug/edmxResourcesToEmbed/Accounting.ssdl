@@ -1,0 +1,1077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eBusinessModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="eBusinessModelStoreContainer">
+    <EntitySet Name="AccBudget" EntityType="eBusinessModel.Store.AccBudget" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccBudgetDetails" EntityType="eBusinessModel.Store.AccBudgetDetails" store:Type="Tables" store:Schema="dbo" store:Name="AccBudgetDetails">
+      <DefiningQuery>SELECT 
+      [AccBudgetDetails].[BudgetId] AS [BudgetId], 
+      [AccBudgetDetails].[AccHeadId] AS [AccHeadId], 
+      [AccBudgetDetails].[Description] AS [Description], 
+      [AccBudgetDetails].[Amount] AS [Amount]
+      FROM [dbo].[AccBudgetDetails] AS [AccBudgetDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AccGeneralLedger" EntityType="eBusinessModel.Store.AccGeneralLedger" store:Type="Tables" store:Schema="dbo" store:Name="AccGeneralLedger">
+      <DefiningQuery>SELECT 
+      [AccGeneralLedger].[TrnID] AS [TrnID], 
+      [AccGeneralLedger].[TrnDate] AS [TrnDate], 
+      [AccGeneralLedger].[VoucherNo] AS [VoucherNo], 
+      [AccGeneralLedger].[CompanyID] AS [CompanyID], 
+      [AccGeneralLedger].[AccProjectID] AS [AccProjectID], 
+      [AccGeneralLedger].[VoucherTypeID] AS [VoucherTypeID], 
+      [AccGeneralLedger].[PaymentTypeID] AS [PaymentTypeID], 
+      [AccGeneralLedger].[AccountID] AS [AccountID], 
+      [AccGeneralLedger].[Description] AS [Description], 
+      [AccGeneralLedger].[Debit] AS [Debit], 
+      [AccGeneralLedger].[Credit] AS [Credit], 
+      [AccGeneralLedger].[Note] AS [Note], 
+      [AccGeneralLedger].[QuarterID] AS [QuarterID], 
+      [AccGeneralLedger].[BudgetID] AS [BudgetID], 
+      [AccGeneralLedger].[Voucher] AS [Voucher], 
+      [AccGeneralLedger].[Status] AS [Status]
+      FROM [dbo].[AccGeneralLedger] AS [AccGeneralLedger]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AccGroup" EntityType="eBusinessModel.Store.AccGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccHead" EntityType="eBusinessModel.Store.AccHead" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccProject" EntityType="eBusinessModel.Store.AccProject" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccQuarterBudget" EntityType="eBusinessModel.Store.AccQuarterBudget" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccQuarterBudgetDetails" EntityType="eBusinessModel.Store.AccQuarterBudgetDetails" store:Type="Tables" store:Schema="dbo" store:Name="AccQuarterBudgetDetails">
+      <DefiningQuery>SELECT 
+      [AccQuarterBudgetDetails].[QBudgetID] AS [QBudgetID], 
+      [AccQuarterBudgetDetails].[AccHeadID] AS [AccHeadID], 
+      [AccQuarterBudgetDetails].[Amount] AS [Amount]
+      FROM [dbo].[AccQuarterBudgetDetails] AS [AccQuarterBudgetDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AccType" EntityType="eBusinessModel.Store.AccType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdjustmenDetails" EntityType="eBusinessModel.Store.AdjustmenDetails" store:Type="Tables" store:Schema="dbo" store:Name="AdjustmenDetails">
+      <DefiningQuery>SELECT 
+      [AdjustmenDetails].[AdjustmentID] AS [AdjustmentID], 
+      [AdjustmenDetails].[ProductCode] AS [ProductCode], 
+      [AdjustmenDetails].[AdjustmentQty] AS [AdjustmentQty], 
+      [AdjustmenDetails].[RatePerUnit] AS [RatePerUnit], 
+      [AdjustmenDetails].[Note] AS [Note]
+      FROM [dbo].[AdjustmenDetails] AS [AdjustmenDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Adjustment" EntityType="eBusinessModel.Store.Adjustment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdjustmentType" EntityType="eBusinessModel.Store.AdjustmentType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Bank" EntityType="eBusinessModel.Store.Bank" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Branch" EntityType="eBusinessModel.Store.Branch" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CashBook" EntityType="eBusinessModel.Store.CashBook" store:Type="Tables" store:Schema="dbo" store:Name="CashBook">
+      <DefiningQuery>SELECT 
+      [CashBook].[TrnDate] AS [TrnDate], 
+      [CashBook].[OpeningBalance] AS [OpeningBalance], 
+      [CashBook].[ReceivedBalance] AS [ReceivedBalance], 
+      [CashBook].[PaymentBalance] AS [PaymentBalance], 
+      [CashBook].[Status] AS [Status], 
+      [CashBook].[Note] AS [Note]
+      FROM [dbo].[CashBook] AS [CashBook]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CheckInfo" EntityType="eBusinessModel.Store.CheckInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChequeRegister" EntityType="eBusinessModel.Store.ChequeRegister" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CompanyInfo" EntityType="eBusinessModel.Store.CompanyInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CRDR" EntityType="eBusinessModel.Store.CRDR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CRDRDetails" EntityType="eBusinessModel.Store.CRDRDetails" store:Type="Tables" store:Schema="dbo" store:Name="CRDRDetails">
+      <DefiningQuery>SELECT 
+      [CRDRDetails].[CRDRID] AS [CRDRID], 
+      [CRDRDetails].[ProductCode] AS [ProductCode], 
+      [CRDRDetails].[CRDRQty] AS [CRDRQty], 
+      [CRDRDetails].[RatePerUnit] AS [RatePerUnit], 
+      [CRDRDetails].[SDAppPrice] AS [SDAppPrice], 
+      [CRDRDetails].[SD] AS [SD], 
+      [CRDRDetails].[VATAppPrice] AS [VATAppPrice], 
+      [CRDRDetails].[VAT] AS [VAT]
+      FROM [dbo].[CRDRDetails] AS [CRDRDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CustomerInfo" EntityType="eBusinessModel.Store.CustomerInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExpenseInfo" EntityType="eBusinessModel.Store.ExpenseInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InvBrand" EntityType="eBusinessModel.Store.InvBrand" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PaymentType" EntityType="eBusinessModel.Store.PaymentType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PriceDeclarationDetails" EntityType="eBusinessModel.Store.PriceDeclarationDetails" store:Type="Tables" store:Schema="dbo" store:Name="PriceDeclarationDetails">
+      <DefiningQuery>SELECT 
+      [PriceDeclarationDetails].[DeclarationID] AS [DeclarationID], 
+      [PriceDeclarationDetails].[SerialNo] AS [SerialNo], 
+      [PriceDeclarationDetails].[ProductCode] AS [ProductCode], 
+      [PriceDeclarationDetails].[UnitPrice] AS [UnitPrice], 
+      [PriceDeclarationDetails].[GrossQty] AS [GrossQty], 
+      [PriceDeclarationDetails].[RequiredQty] AS [RequiredQty], 
+      [PriceDeclarationDetails].[WastageQty] AS [WastageQty], 
+      [PriceDeclarationDetails].[ActualQty] AS [ActualQty], 
+      [PriceDeclarationDetails].[Amount] AS [Amount]
+      FROM [dbo].[PriceDeclarationDetails] AS [PriceDeclarationDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PriceDeclarationExpense" EntityType="eBusinessModel.Store.PriceDeclarationExpense" store:Type="Tables" store:Schema="dbo" store:Name="PriceDeclarationExpense">
+      <DefiningQuery>SELECT 
+      [PriceDeclarationExpense].[DeclarationID] AS [DeclarationID], 
+      [PriceDeclarationExpense].[ExpenseID] AS [ExpenseID], 
+      [PriceDeclarationExpense].[SLNO] AS [SLNO], 
+      [PriceDeclarationExpense].[ExpenseCode] AS [ExpenseCode], 
+      [PriceDeclarationExpense].[Expense] AS [Expense]
+      FROM [dbo].[PriceDeclarationExpense] AS [PriceDeclarationExpense]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PriceDeclarationInfo" EntityType="eBusinessModel.Store.PriceDeclarationInfo" store:Type="Tables" store:Schema="dbo" store:Name="PriceDeclarationInfo">
+      <DefiningQuery>SELECT 
+      [PriceDeclarationInfo].[DeclarationID] AS [DeclarationID], 
+      [PriceDeclarationInfo].[SerialNo] AS [SerialNo], 
+      [PriceDeclarationInfo].[Entrydate] AS [Entrydate], 
+      [PriceDeclarationInfo].[ProductCode] AS [ProductCode], 
+      [PriceDeclarationInfo].[UnitValue] AS [UnitValue], 
+      [PriceDeclarationInfo].[UnitPrice] AS [UnitPrice], 
+      [PriceDeclarationInfo].[HSCode] AS [HSCode], 
+      [PriceDeclarationInfo].[SDAmount] AS [SDAmount], 
+      [PriceDeclarationInfo].[VATType] AS [VATType], 
+      [PriceDeclarationInfo].[VATAmount] AS [VATAmount], 
+      [PriceDeclarationInfo].[SDCurrentPrice] AS [SDCurrentPrice], 
+      [PriceDeclarationInfo].[SDProposedPrice] AS [SDProposedPrice], 
+      [PriceDeclarationInfo].[SDOnSDPrice] AS [SDOnSDPrice], 
+      [PriceDeclarationInfo].[VATCurrentPrice] AS [VATCurrentPrice], 
+      [PriceDeclarationInfo].[VATProposedPrice] AS [VATProposedPrice], 
+      [PriceDeclarationInfo].[WholeSalePrice] AS [WholeSalePrice], 
+      [PriceDeclarationInfo].[RetailPrice] AS [RetailPrice], 
+      [PriceDeclarationInfo].[Creator] AS [Creator], 
+      [PriceDeclarationInfo].[CreationDate] AS [CreationDate], 
+      [PriceDeclarationInfo].[Modifier] AS [Modifier], 
+      [PriceDeclarationInfo].[ModificationDate] AS [ModificationDate], 
+      [PriceDeclarationInfo].[Active] AS [Active]
+      FROM [dbo].[PriceDeclarationInfo] AS [PriceDeclarationInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ProductCategory" EntityType="eBusinessModel.Store.ProductCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductInfo" EntityType="eBusinessModel.Store.ProductInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Production" EntityType="eBusinessModel.Store.Production" store:Type="Tables" store:Schema="dbo" store:Name="Production">
+      <DefiningQuery>SELECT 
+      [Production].[ProductionID] AS [ProductionID], 
+      [Production].[SerialNo] AS [SerialNo], 
+      [Production].[BatchNo] AS [BatchNo], 
+      [Production].[ManufactureDate] AS [ManufactureDate], 
+      [Production].[Remarks] AS [Remarks], 
+      [Production].[Creator] AS [Creator], 
+      [Production].[CreationDate] AS [CreationDate], 
+      [Production].[Modifier] AS [Modifier], 
+      [Production].[ModificationDate] AS [ModificationDate], 
+      [Production].[Active] AS [Active]
+      FROM [dbo].[Production] AS [Production]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ProductionConsum" EntityType="eBusinessModel.Store.ProductionConsum" store:Type="Tables" store:Schema="dbo" store:Name="ProductionConsum">
+      <DefiningQuery>SELECT 
+      [ProductionConsum].[ProductionID] AS [ProductionID], 
+      [ProductionConsum].[ProductCode] AS [ProductCode], 
+      [ProductionConsum].[ConsumQty] AS [ConsumQty], 
+      [ProductionConsum].[RatePerUnit] AS [RatePerUnit], 
+      [ProductionConsum].[UOM] AS [UOM]
+      FROM [dbo].[ProductionConsum] AS [ProductionConsum]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ProductionDetails" EntityType="eBusinessModel.Store.ProductionDetails" store:Type="Tables" store:Schema="dbo" store:Name="ProductionDetails">
+      <DefiningQuery>SELECT 
+      [ProductionDetails].[ProductionID] AS [ProductionID], 
+      [ProductionDetails].[ProductCode] AS [ProductCode], 
+      [ProductionDetails].[ProductionQty] AS [ProductionQty], 
+      [ProductionDetails].[REMARKS] AS [REMARKS]
+      FROM [dbo].[ProductionDetails] AS [ProductionDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ProductPrice" EntityType="eBusinessModel.Store.ProductPrice" store:Type="Tables" store:Schema="dbo" store:Name="ProductPrice">
+      <DefiningQuery>SELECT 
+      [ProductPrice].[Sys_ID] AS [Sys_ID], 
+      [ProductPrice].[Inv_ProductID] AS [Inv_ProductID], 
+      [ProductPrice].[CostPrice] AS [CostPrice], 
+      [ProductPrice].[Regular_MRP] AS [Regular_MRP], 
+      [ProductPrice].[Dealer_MRP] AS [Dealer_MRP], 
+      [ProductPrice].[EffectiveDate] AS [EffectiveDate], 
+      [ProductPrice].[Modifier] AS [Modifier], 
+      [ProductPrice].[ModificationDate] AS [ModificationDate]
+      FROM [dbo].[ProductPrice] AS [ProductPrice]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Purchase" EntityType="eBusinessModel.Store.Purchase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseDetails" EntityType="eBusinessModel.Store.PurchaseDetails" store:Type="Tables" store:Schema="dbo" store:Name="PurchaseDetails">
+      <DefiningQuery>SELECT 
+      [PurchaseDetails].[PurchaseID] AS [PurchaseID], 
+      [PurchaseDetails].[ProductID] AS [ProductID], 
+      [PurchaseDetails].[PurchaseQty] AS [PurchaseQty], 
+      [PurchaseDetails].[UseQty] AS [UseQty], 
+      [PurchaseDetails].[RatePerUnit] AS [RatePerUnit], 
+      [PurchaseDetails].[SD] AS [SD], 
+      [PurchaseDetails].[CD] AS [CD], 
+      [PurchaseDetails].[RD] AS [RD], 
+      [PurchaseDetails].[AMTExamVAT] AS [AMTExamVAT], 
+      [PurchaseDetails].[AIT] AS [AIT], 
+      [PurchaseDetails].[ATV] AS [ATV], 
+      [PurchaseDetails].[CFDuties] AS [CFDuties], 
+      [PurchaseDetails].[PSI] AS [PSI]
+      FROM [dbo].[PurchaseDetails] AS [PurchaseDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PurchaseRetrun" EntityType="eBusinessModel.Store.PurchaseRetrun" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseReturnDetails" EntityType="eBusinessModel.Store.PurchaseReturnDetails" store:Type="Tables" store:Schema="dbo" store:Name="PurchaseReturnDetails">
+      <DefiningQuery>SELECT 
+      [PurchaseReturnDetails].[PurchaseReturnID] AS [PurchaseReturnID], 
+      [PurchaseReturnDetails].[ProductID] AS [ProductID], 
+      [PurchaseReturnDetails].[ReturnQty] AS [ReturnQty], 
+      [PurchaseReturnDetails].[RatePerUnit] AS [RatePerUnit], 
+      [PurchaseReturnDetails].[SD] AS [SD], 
+      [PurchaseReturnDetails].[CD] AS [CD], 
+      [PurchaseReturnDetails].[RD] AS [RD], 
+      [PurchaseReturnDetails].[AMTExamVAT] AS [AMTExamVAT], 
+      [PurchaseReturnDetails].[AIT] AS [AIT], 
+      [PurchaseReturnDetails].[ATV] AS [ATV], 
+      [PurchaseReturnDetails].[CFDuties] AS [CFDuties], 
+      [PurchaseReturnDetails].[PSI] AS [PSI]
+      FROM [dbo].[PurchaseReturnDetails] AS [PurchaseReturnDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Sales" EntityType="eBusinessModel.Store.Sales" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesDetails" EntityType="eBusinessModel.Store.SalesDetails" store:Type="Tables" store:Schema="dbo" store:Name="SalesDetails">
+      <DefiningQuery>SELECT 
+      [SalesDetails].[SalesID] AS [SalesID], 
+      [SalesDetails].[ProductCode] AS [ProductCode], 
+      [SalesDetails].[SalesQty] AS [SalesQty], 
+      [SalesDetails].[RatePerUnit] AS [RatePerUnit], 
+      [SalesDetails].[SDAppPrice] AS [SDAppPrice], 
+      [SalesDetails].[SD] AS [SD], 
+      [SalesDetails].[VATAppPrice] AS [VATAppPrice], 
+      [SalesDetails].[VAT] AS [VAT]
+      FROM [dbo].[SalesDetails] AS [SalesDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SupplierInfo" EntityType="eBusinessModel.Store.SupplierInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TarrifType" EntityType="eBusinessModel.Store.TarrifType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaxSources" EntityType="eBusinessModel.Store.TaxSources" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TreasuryPayment" EntityType="eBusinessModel.Store.TreasuryPayment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TreasuryPaymentDetails" EntityType="eBusinessModel.Store.TreasuryPaymentDetails" store:Type="Tables" store:Schema="dbo" store:Name="TreasuryPaymentDetails">
+      <DefiningQuery>SELECT 
+      [TreasuryPaymentDetails].[PaymentID] AS [PaymentID], 
+      [TreasuryPaymentDetails].[PaymentTypeID] AS [PaymentTypeID], 
+      [TreasuryPaymentDetails].[SerialNo] AS [SerialNo], 
+      [TreasuryPaymentDetails].[Amount] AS [Amount], 
+      [TreasuryPaymentDetails].[Remarks] AS [Remarks]
+      FROM [dbo].[TreasuryPaymentDetails] AS [TreasuryPaymentDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Unit" EntityType="eBusinessModel.Store.Unit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VATType" EntityType="eBusinessModel.Store.VATType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VDS" EntityType="eBusinessModel.Store.VDS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VoucherType" EntityType="eBusinessModel.Store.VoucherType" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AccBudgetDetails_AccBudget" Association="eBusinessModel.Store.FK_AccBudgetDetails_AccBudget">
+      <End Role="AccBudget" EntitySet="AccBudget" />
+      <End Role="AccBudgetDetails" EntitySet="AccBudgetDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AccBudget">
+    <Key>
+      <PropertyRef Name="BudgetID" />
+    </Key>
+    <Property Name="BudgetID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="BudgetFor" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="BudgetDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalAmount" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.AccBudgetDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AccBudgetDetails">
+    <Key>
+      <PropertyRef Name="BudgetId" />
+      <PropertyRef Name="AccHeadId" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="Amount" />
+    </Key>
+    <Property Name="BudgetId" Type="int" Nullable="false" />
+    <Property Name="AccHeadId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Amount" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.AccGeneralLedger' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AccGeneralLedger">
+    <Key>
+      <PropertyRef Name="TrnID" />
+      <PropertyRef Name="TrnDate" />
+      <PropertyRef Name="VoucherNo" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="AccProjectID" />
+      <PropertyRef Name="VoucherTypeID" />
+      <PropertyRef Name="PaymentTypeID" />
+      <PropertyRef Name="AccountID" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="Debit" />
+      <PropertyRef Name="Credit" />
+      <PropertyRef Name="Note" />
+      <PropertyRef Name="QuarterID" />
+      <PropertyRef Name="BudgetID" />
+      <PropertyRef Name="Voucher" />
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="TrnID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrnDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="VoucherNo" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="AccProjectID" Type="int" Nullable="false" />
+    <Property Name="VoucherTypeID" Type="int" Nullable="false" />
+    <Property Name="PaymentTypeID" Type="int" Nullable="false" />
+    <Property Name="AccountID" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Debit" Type="float" Nullable="false" />
+    <Property Name="Credit" Type="float" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="QuarterID" Type="int" Nullable="false" />
+    <Property Name="BudgetID" Type="int" Nullable="false" />
+    <Property Name="Voucher" Type="image" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccGroup">
+    <Key>
+      <PropertyRef Name="AccGroupID" />
+    </Key>
+    <Property Name="AccGroupID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="AccTypeID" Type="int" Nullable="false" />
+    <Property Name="AccGroupName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Note" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="AccHead">
+    <Key>
+      <PropertyRef Name="AccHeadID" />
+    </Key>
+    <Property Name="AccHeadID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="AccoGroupID" Type="int" Nullable="false" />
+    <Property Name="AccountName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="OpenDebitBalance" Type="float" Nullable="false" />
+    <Property Name="OpenCreditBalance" Type="float" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreateBy" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifyBy" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ModifyDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccProject">
+    <Key>
+      <PropertyRef Name="AccProjectID" />
+    </Key>
+    <Property Name="AccProjectID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="ProjectName" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="AccQuarterBudget">
+    <Key>
+      <PropertyRef Name="QBudgetID" />
+    </Key>
+    <Property Name="QBudgetID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="Quarter" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BudgetID" Type="int" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalAmount" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.AccQuarterBudgetDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AccQuarterBudgetDetails">
+    <Key>
+      <PropertyRef Name="QBudgetID" />
+      <PropertyRef Name="AccHeadID" />
+      <PropertyRef Name="Amount" />
+    </Key>
+    <Property Name="QBudgetID" Type="int" Nullable="false" />
+    <Property Name="AccHeadID" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccType">
+    <Key>
+      <PropertyRef Name="AccTypeID" />
+    </Key>
+    <Property Name="AccTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="AccTypeName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Note" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.AdjustmenDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AdjustmenDetails">
+    <Key>
+      <PropertyRef Name="AdjustmentID" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="AdjustmentQty" />
+      <PropertyRef Name="RatePerUnit" />
+      <PropertyRef Name="Note" />
+    </Key>
+    <Property Name="AdjustmentID" Type="numeric" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="AdjustmentQty" Type="float" Nullable="false" />
+    <Property Name="RatePerUnit" Type="money" Nullable="false" />
+    <Property Name="Note" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Adjustment">
+    <Key>
+      <PropertyRef Name="AdjustmentID" />
+    </Key>
+    <Property Name="AdjustmentID" Type="int" Nullable="false" />
+    <Property Name="AdjustmentNo" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="AdjustmentDate" Type="datetime" Nullable="false" />
+    <Property Name="AdjustmentTypeID" Type="int" Nullable="false" />
+    <Property Name="Reason" Type="varchar" MaxLength="50" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdjustmentType">
+    <Key>
+      <PropertyRef Name="AdjustmentTypeID" />
+    </Key>
+    <Property Name="AdjustmentTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdjustmentType" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Bank">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="BankName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Note" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="BranchID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="BankID" Type="int" Nullable="false" />
+    <Property Name="BranchName" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="120" />
+    <Property Name="Phone" Type="varchar" MaxLength="12" />
+    <Property Name="Mobile" Type="varchar" MaxLength="11" />
+    <Property Name="Email" Type="varchar" MaxLength="40" />
+    <Property Name="Note" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.CashBook' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="CashBook">
+    <Key>
+      <PropertyRef Name="TrnDate" />
+      <PropertyRef Name="OpeningBalance" />
+      <PropertyRef Name="ReceivedBalance" />
+      <PropertyRef Name="PaymentBalance" />
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="TrnDate" Type="datetime" Nullable="false" />
+    <Property Name="OpeningBalance" Type="money" Nullable="false" />
+    <Property Name="ReceivedBalance" Type="money" Nullable="false" />
+    <Property Name="PaymentBalance" Type="money" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CheckInfo">
+    <Key>
+      <PropertyRef Name="CheckID" />
+    </Key>
+    <Property Name="CheckID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="BankID" Type="int" Nullable="false" />
+    <Property Name="ChequeStart" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ChequeEnd" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="TakenDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalPage" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChequeRegister">
+    <Key>
+      <PropertyRef Name="ChequeRegID" />
+    </Key>
+    <Property Name="ChequeRegID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="VoucherNo" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="BankID" Type="int" Nullable="false" />
+    <Property Name="ChequeNo" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="AccountID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="150" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="VoucherTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CompanyInfo">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PostCode" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="VATRegNo" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Phone" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Mobile" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Fax" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="eMail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Note" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="IssueDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CRDR">
+    <Key>
+      <PropertyRef Name="CRDRID" />
+    </Key>
+    <Property Name="CRDRID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CRNNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CustomerCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="InvoiceNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="VehicleInfo" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Reason" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="CRDR" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.CRDRDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="CRDRDetails">
+    <Key>
+      <PropertyRef Name="CRDRID" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="CRDRQty" />
+      <PropertyRef Name="RatePerUnit" />
+      <PropertyRef Name="SDAppPrice" />
+      <PropertyRef Name="SD" />
+      <PropertyRef Name="VATAppPrice" />
+      <PropertyRef Name="VAT" />
+    </Key>
+    <Property Name="CRDRID" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CRDRQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="RatePerUnit" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SDAppPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SD" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VATAppPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VAT" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+  </EntityType>
+  <EntityType Name="CustomerInfo">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="CustomerCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CustomerName" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="CustomerType" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Propietor" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="ContactPerson" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Country" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Phone" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Mobile" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="eMail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="VATRegNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DiscountPercent" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DistributorPoint" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpenseInfo">
+    <Key>
+      <PropertyRef Name="ExpenseID" />
+    </Key>
+    <Property Name="ExpenseID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ExpenseCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ExpenseName" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Remarks" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="InvBrand">
+    <Key>
+      <PropertyRef Name="BrandID" />
+    </Key>
+    <Property Name="BrandID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BrandName" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="PaymentTypeID" />
+    </Key>
+    <Property Name="PaymentTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PaymentTypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.PriceDeclarationDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PriceDeclarationDetails">
+    <Key>
+      <PropertyRef Name="DeclarationID" />
+      <PropertyRef Name="SerialNo" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="GrossQty" />
+      <PropertyRef Name="RequiredQty" />
+      <PropertyRef Name="WastageQty" />
+      <PropertyRef Name="ActualQty" />
+      <PropertyRef Name="Amount" />
+    </Key>
+    <Property Name="DeclarationID" Type="int" Nullable="false" />
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="UnitPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="GrossQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="RequiredQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="WastageQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="ActualQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="Amount" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.PriceDeclarationExpense' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PriceDeclarationExpense">
+    <Key>
+      <PropertyRef Name="DeclarationID" />
+      <PropertyRef Name="ExpenseID" />
+      <PropertyRef Name="SLNO" />
+      <PropertyRef Name="ExpenseCode" />
+      <PropertyRef Name="Expense" />
+    </Key>
+    <Property Name="DeclarationID" Type="int" Nullable="false" />
+    <Property Name="ExpenseID" Type="int" Nullable="false" />
+    <Property Name="SLNO" Type="int" Nullable="false" />
+    <Property Name="ExpenseCode" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="Expense" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.PriceDeclarationInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PriceDeclarationInfo">
+    <Key>
+      <PropertyRef Name="DeclarationID" />
+      <PropertyRef Name="SerialNo" />
+      <PropertyRef Name="Entrydate" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="UnitValue" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="HSCode" />
+      <PropertyRef Name="SDAmount" />
+      <PropertyRef Name="VATType" />
+      <PropertyRef Name="VATAmount" />
+      <PropertyRef Name="SDCurrentPrice" />
+      <PropertyRef Name="SDProposedPrice" />
+      <PropertyRef Name="SDOnSDPrice" />
+      <PropertyRef Name="VATCurrentPrice" />
+      <PropertyRef Name="VATProposedPrice" />
+      <PropertyRef Name="WholeSalePrice" />
+      <PropertyRef Name="RetailPrice" />
+      <PropertyRef Name="Creator" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="Modifier" />
+      <PropertyRef Name="ModificationDate" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Name="DeclarationID" Type="int" Nullable="false" />
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="Entrydate" Type="datetime" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="UnitValue" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="UnitPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="HSCode" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SDAmount" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VATType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="VATAmount" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SDCurrentPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SDProposedPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SDOnSDPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VATCurrentPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VATProposedPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="WholeSalePrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="RetailPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="ProductCategoryID" />
+    </Key>
+    <Property Name="ProductCategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCategory" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ProductInfo">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="ProductName" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="ProductType" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="ProductCategoryID" Type="int" Nullable="false" />
+    <Property Name="BrandID" Type="int" Nullable="false" />
+    <Property Name="TarrifTypeID" Type="int" Nullable="false" />
+    <Property Name="UnitID" Type="int" Nullable="false" />
+    <Property Name="UnitIDOut" Type="int" Nullable="false" />
+    <Property Name="ConversionRate" Type="numeric" Nullable="false" />
+    <Property Name="VATTypeID" Type="int" Nullable="false" />
+    <Property Name="WeightPerUnit" Type="numeric" Nullable="false" />
+    <Property Name="RatePerUnit" Type="money" Nullable="false" />
+    <Property Name="VATableRate" Type="money" Nullable="false" />
+    <Property Name="VATPercent" Type="money" Nullable="false" />
+    <Property Name="RebatePercent" Type="money" Nullable="false" />
+    <Property Name="SDPercent" Type="money" Nullable="false" />
+    <Property Name="SupTaxPercent" Type="money" Nullable="false" />
+    <Property Name="ApprovedPrice" Type="money" Nullable="false" />
+    <Property Name="ReorderLevel" Type="int" Nullable="false" />
+    <Property Name="ProductImage" Type="image" Nullable="false" />
+    <Property Name="Note" Type="varchar" MaxLength="200" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="EffectiveDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.Production' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Production">
+    <Key>
+      <PropertyRef Name="ProductionID" />
+      <PropertyRef Name="SerialNo" />
+      <PropertyRef Name="BatchNo" />
+      <PropertyRef Name="ManufactureDate" />
+      <PropertyRef Name="Remarks" />
+      <PropertyRef Name="Creator" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="Modifier" />
+      <PropertyRef Name="ModificationDate" />
+      <PropertyRef Name="Active" />
+    </Key>
+    <Property Name="ProductionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="BatchNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ManufactureDate" Type="datetime" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.ProductionConsum' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ProductionConsum">
+    <Key>
+      <PropertyRef Name="ProductionID" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="ConsumQty" />
+      <PropertyRef Name="RatePerUnit" />
+      <PropertyRef Name="UOM" />
+    </Key>
+    <Property Name="ProductionID" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="ConsumQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="RatePerUnit" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="UOM" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.ProductionDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ProductionDetails">
+    <Key>
+      <PropertyRef Name="ProductionID" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="ProductionQty" />
+      <PropertyRef Name="REMARKS" />
+    </Key>
+    <Property Name="ProductionID" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="ProductionQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="REMARKS" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.ProductPrice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ProductPrice">
+    <Key>
+      <PropertyRef Name="Sys_ID" />
+    </Key>
+    <Property Name="Sys_ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Inv_ProductID" Type="varchar" MaxLength="14" />
+    <Property Name="CostPrice" Type="money" />
+    <Property Name="Regular_MRP" Type="money" />
+    <Property Name="Dealer_MRP" Type="money" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="Modifier" Type="varchar" MaxLength="50" />
+    <Property Name="ModificationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Purchase">
+    <Key>
+      <PropertyRef Name="PurchaseID" />
+    </Key>
+    <Property Name="PurchaseDate" Type="datetime" Nullable="false" />
+    <Property Name="PurchaseID" Type="int" Nullable="false" />
+    <Property Name="GRNNo" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="SupplierID" Type="numeric" Nullable="false" />
+    <Property Name="InvoiceNo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="InvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="ChallanBENo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ChallanDate" Type="datetime" Nullable="false" />
+    <Property Name="LCNo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LCDate" Type="datetime" Nullable="false" />
+    <Property Name="PONo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="PODate" Type="datetime" Nullable="false" />
+    <Property Name="IsVoid" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="Note" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.PurchaseDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PurchaseDetails">
+    <Key>
+      <PropertyRef Name="PurchaseID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="PurchaseQty" />
+      <PropertyRef Name="UseQty" />
+      <PropertyRef Name="RatePerUnit" />
+      <PropertyRef Name="SD" />
+      <PropertyRef Name="CD" />
+      <PropertyRef Name="RD" />
+      <PropertyRef Name="AMTExamVAT" />
+      <PropertyRef Name="AIT" />
+      <PropertyRef Name="ATV" />
+      <PropertyRef Name="CFDuties" />
+      <PropertyRef Name="PSI" />
+    </Key>
+    <Property Name="PurchaseID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="PurchaseQty" Type="float" Nullable="false" />
+    <Property Name="UseQty" Type="float" Nullable="false" />
+    <Property Name="RatePerUnit" Type="money" Nullable="false" />
+    <Property Name="SD" Type="money" Nullable="false" />
+    <Property Name="CD" Type="money" Nullable="false" />
+    <Property Name="RD" Type="money" Nullable="false" />
+    <Property Name="AMTExamVAT" Type="money" Nullable="false" />
+    <Property Name="AIT" Type="money" Nullable="false" />
+    <Property Name="ATV" Type="money" Nullable="false" />
+    <Property Name="CFDuties" Type="money" Nullable="false" />
+    <Property Name="PSI" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PurchaseRetrun">
+    <Key>
+      <PropertyRef Name="PurchaseReturnID" />
+    </Key>
+    <Property Name="PurchaseReturnDate" Type="datetime" Nullable="false" />
+    <Property Name="PurchaseReturnID" Type="int" Nullable="false" />
+    <Property Name="PurchaseID" Type="int" Nullable="false" />
+    <Property Name="IsVoid" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="Note" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.PurchaseReturnDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PurchaseReturnDetails">
+    <Key>
+      <PropertyRef Name="PurchaseReturnID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="ReturnQty" />
+      <PropertyRef Name="RatePerUnit" />
+      <PropertyRef Name="SD" />
+      <PropertyRef Name="CD" />
+      <PropertyRef Name="RD" />
+      <PropertyRef Name="AMTExamVAT" />
+      <PropertyRef Name="AIT" />
+      <PropertyRef Name="ATV" />
+      <PropertyRef Name="CFDuties" />
+      <PropertyRef Name="PSI" />
+    </Key>
+    <Property Name="PurchaseReturnID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ReturnQty" Type="float" Nullable="false" />
+    <Property Name="RatePerUnit" Type="money" Nullable="false" />
+    <Property Name="SD" Type="money" Nullable="false" />
+    <Property Name="CD" Type="money" Nullable="false" />
+    <Property Name="RD" Type="money" Nullable="false" />
+    <Property Name="AMTExamVAT" Type="money" Nullable="false" />
+    <Property Name="AIT" Type="money" Nullable="false" />
+    <Property Name="ATV" Type="money" Nullable="false" />
+    <Property Name="CFDuties" Type="money" Nullable="false" />
+    <Property Name="PSI" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="SalesID" />
+    </Key>
+    <Property Name="SalesID" Type="int" Nullable="false" />
+    <Property Name="SalesInvoice" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="VATNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="OrderNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomerID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="InvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="DeliveryDate" Type="datetime" Nullable="false" />
+    <Property Name="CurrentTime" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Deliime" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Destination" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="VehicleInfo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.SalesDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="SalesDetails">
+    <Key>
+      <PropertyRef Name="SalesID" />
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="SalesQty" />
+      <PropertyRef Name="RatePerUnit" />
+      <PropertyRef Name="SDAppPrice" />
+      <PropertyRef Name="SD" />
+      <PropertyRef Name="VATAppPrice" />
+      <PropertyRef Name="VAT" />
+    </Key>
+    <Property Name="SalesID" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SalesQty" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="RatePerUnit" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SDAppPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="SD" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VATAppPrice" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="VAT" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+  </EntityType>
+  <EntityType Name="SupplierInfo">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="int" Nullable="false" />
+    <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SupplierName" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="ContactPerson" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="SupplierType" Type="varchar" Nullable="false" MaxLength="7" />
+    <Property Name="VATRegNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Country" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Phone" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Mobile" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="eMail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TarrifType">
+    <Key>
+      <PropertyRef Name="TarrifTypeID" />
+    </Key>
+    <Property Name="TarrifTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TarrifType" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TaxSources">
+    <Key>
+      <PropertyRef Name="SourceID" />
+    </Key>
+    <Property Name="SourceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SourceCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="SourceName" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="StartAmount" Type="money" Nullable="false" />
+    <Property Name="EndAmount" Type="money" Nullable="false" />
+    <Property Name="VATPercent" Type="money" Nullable="false" />
+    <Property Name="Rebate" Type="money" Nullable="false" />
+    <Property Name="SourceType" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TreasuryPayment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VPNo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="PaymentDate" Type="datetime" />
+    <Property Name="EnterBy" Type="varchar" MaxLength="200" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'eBusiness.dbo.TreasuryPaymentDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="TreasuryPaymentDetails">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+      <PropertyRef Name="PaymentTypeID" />
+      <PropertyRef Name="SerialNo" />
+      <PropertyRef Name="Amount" />
+    </Key>
+    <Property Name="PaymentID" Type="int" Nullable="false" />
+    <Property Name="PaymentTypeID" Type="int" Nullable="false" />
+    <Property Name="SerialNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Amount" Type="numeric" Nullable="false" Precision="20" Scale="6" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Unit">
+    <Key>
+      <PropertyRef Name="UnitID" />
+    </Key>
+    <Property Name="UnitID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UnitName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VATType">
+    <Key>
+      <PropertyRef Name="VATTypeID" />
+    </Key>
+    <Property Name="VATTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VATType" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="VDS">
+    <Key>
+      <PropertyRef Name="VDSID" />
+    </Key>
+    <Property Name="VDSID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SerialNo" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Remarks" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Creator" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifier" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VoucherType">
+    <Key>
+      <PropertyRef Name="VoucherTypeID" />
+    </Key>
+    <Property Name="VoucherTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VoucherTypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_AccBudgetDetails_AccBudget">
+    <End Role="AccBudget" Type="eBusinessModel.Store.AccBudget" Multiplicity="1" />
+    <End Role="AccBudgetDetails" Type="eBusinessModel.Store.AccBudgetDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccBudget">
+        <PropertyRef Name="BudgetID" />
+      </Principal>
+      <Dependent Role="AccBudgetDetails">
+        <PropertyRef Name="BudgetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'eBusiness.dbo.VDSDetails' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="VDSDetails">
+        <Property Name="VDSID" Type="int" />
+        <Property Name="VDSDate" Type="datetime" />
+        <Property Name="SupplierID" Type="varchar" MaxLength="15" />
+        <Property Name="SourceID" Type="varchar" MaxLength="15" />
+        <Property Name="PaymentAmount" Type="numeric" Precision="20" Scale="6" />
+        <Property Name="DeductedAmount" Type="numeric" Precision="20" Scale="6" />
+      </EntityType>-->
+</Schema>

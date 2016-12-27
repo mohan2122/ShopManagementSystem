@@ -1,0 +1,261 @@
+﻿@model Repository.MainPurchase
+@{
+    ViewBag.Title = "Branch";
+}
+<script src="~/Scripts/ApplicationJS/POS_Purchase/PurchaseItem.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Purchase Item</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.purchase.PurchaseDate, "Purchase Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.purchase.PurchaseDate,new{value= DateTime.Now.ToString()})
+                </div>
+            </div>
+           
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.purchase.InvoiceNo, "Invoice No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.purchase.InvoiceNo )
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.purchase.PurchaseID, "Purchase ID")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.purchase.PurchaseID)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.supplier.SupplierName, "Supplier Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.supplier.SupplierName, (SelectList)ViewData["VdListSuplier"], "--------Choose Supplier-----------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.supplier.ContactPerson, "Contact No.")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.supplier.ContactPerson)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.supplier.Address)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.supplier.Address)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.ProductName, "Product Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.productInfo.ProductName, (SelectList)ViewData["VdListProduct"], "--------Choose Product---------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.ProductCode, "Product Code")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.productInfo.ProductCode)
+                </div>
+            </div>
+           
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.CostPrice, "Purchase Price")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.productInfo.CostPrice)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.RegularMRP, "Sales Price")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.productInfo.RegularMRP)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Quantity, "Quantity")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Quantity)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Total, "Total")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Total)
+                </div>
+            </div>
+            <div class="CustombuttonTwoParts">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Add" id="btnAdd" />
+            </div>
+            <table id="tblProduct">
+                <th>S/L</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </table>
+            <div id="divProductPager"></div>
+        </div>
+        <div class="RightPart">
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.paymentType.PaymentTypeID, "Payment Mode")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.paymentType.PaymentTypeID, (SelectList)ViewData["VdListPaymentMode"], "--------Choose Payment Mode---------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.BankID, "Bank Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.accChequePayment.BankID, (SelectList)ViewData["VdBankList"], "--------Choose Bank-----------", new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.BranchID, "Branch Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.accChequePayment.BranchID, (SelectList)ViewData["VdBranchList"], "--------Choose Branch-----------", new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.ChequeNo, "Cheque No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.ChequeNo, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.Issue_Date, "Issue Date ")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.Issue_Date, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.Cheque_Amount, "Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.Cheque_Amount, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.MaturityDate, "Maturity Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.MaturityDate, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="CustombuttonTwoParts">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    disabled="disabled" value="Add" id="btnAddChequePayment" />
+            </div>
+            <table id="tblAccChequePayment">
+                <th>S/L</th>
+                <th>Bank</th>
+                <th>Branch</th>
+                <th>Cheque No</th>
+                <th>Cheque Amount</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </table>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SubTotal, "SubTotal")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SubTotal, new { @Value = "0.00", @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.PreviousDue, "Previous Due")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.PreviousDue, new { @Value = "0.00", @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AmountPayable, "AmountPayable")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.AmountPayable, new { @Value = "0.00", @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.PaidByCash, "Paid ByCash")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.PaidByCash, new { @Value = "0.00" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.PaidByCheque, "Paid ByCheque")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.PaidByCheque, new { @Value = "0.00", @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AmountPaid, "Amount Paid")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.AmountPaid, new { @Value = "0.00", @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.BalanceDue, "Balance Due")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.BalanceDue, new { @Value = "0.00", @Disabled = "true" })
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="CustombuttonTwoParts">
+        <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+            value="Save" id="btnSave" />
+        <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+            value="Update" id="btnUpdate" />
+    </div>   
+
+}
+

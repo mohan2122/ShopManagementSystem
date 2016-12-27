@@ -1,0 +1,47 @@
+﻿@model Repository.AccType
+@{
+    ViewBag.Title = "Account Type";
+}
+<script src="~/Scripts/ApplicationJS/Accounting_financial/AccType.js"></script>
+
+@using (@Html.BeginForm())
+{    <div class="FormName">Account Type</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.AccTypeID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.CompanyID, (SelectList)ViewData["VdCompanyList"], "--------Choose Company-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AccTypeName, "Acc Type Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.AccTypeName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note, "Note")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAccType"></table>
+                <div id="AccTypePager"></div>
+            </div>
+        </div>
+    </div>
+}
+

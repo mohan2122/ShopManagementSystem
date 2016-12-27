@@ -1,0 +1,41 @@
+﻿@model Repository.Inv_ColorInfo
+@{
+    ViewBag.Title = "ColorInfo";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/ColorInfo.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Color Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.ColorID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ColorName, "Color Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ColorName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note, "Note")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblColorInfo"></table>
+                <div id="ColorInfoPager"></div>
+            </div>
+        </div>
+    </div>
+    
+}

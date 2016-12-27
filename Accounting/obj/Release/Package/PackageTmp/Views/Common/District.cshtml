@@ -1,0 +1,43 @@
+﻿@model Repository.DistrictInfo
+@{
+    ViewBag.Title = "";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/DistrictInfo.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">District Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.DistrictID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DivisionID, "Division")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.DivisionID, (SelectList)ViewData["VdDivisionList"], "        --Choose Division--        ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DistrictName, "District Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.DistrictName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblDistrict"></table>
+                <div id="DistrictPager"></div>
+            </div>
+        </div>
+    </div> 
+    
+    
+}

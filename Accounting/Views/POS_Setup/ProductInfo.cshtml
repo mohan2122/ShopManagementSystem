@@ -1,0 +1,233 @@
+﻿@model Repository.ProductInfo
+
+
+@{
+    ViewBag.Title = "ProductInfo";
+}
+
+<script src="~/Scripts/ApplicationJS/Pos_Setup/ProductInfo.js"></script>
+
+@using (Html.BeginForm("UploadImage", "POS_Setup", FormMethod.Post,
+    new
+    {
+        enctype = "multipart/form-data",
+        id = "ImgForm",
+        name = "ImgForm",
+        target = "UploadTarget"
+    }))
+{
+    <div class="FormName">Product Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.ProductID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProductCode, "Product Code ")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ProductCode, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProductName, "Product Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ProductName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProductType, "Product Type")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ProductType, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProductCategoryID, "Product Category")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.ProductCategoryID, (SelectList)ViewData["VdProductCategoryList"], "----Choose Category----")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.BrandID, "Brand")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.BrandID, (SelectList)ViewData["VdBrandList"], "------Choose Brand------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ColorID, "Color")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.ColorID, (SelectList)ViewData["VdColorList"], "------Choose Color------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SizeID, "Size")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.SizeID, (SelectList)ViewData["VdSizeList"], "------Choose Size------")
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.TarrifTypeID, "Tarrif Type")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.TarrifTypeID, (SelectList)ViewData["VdTarrifTypeList"], "---Choose TarrifType---")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UnitID, "Unit")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.UnitID, (SelectList)ViewData["VdUnitList"], "--------Choose Unit--------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UnitIDOut, "Unit ID Out")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.UnitIDOut, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ConversionRate, "Conversion Rate")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ConversionRate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATTypeID, "VAT Type")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.VATTypeID, (SelectList)ViewData["VdVAtList"], "-----Choose VatType----")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.WeightPerUnit, "Weight Per Unit")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.WeightPerUnit, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.RatePerUnit, "Rate Per Unit")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.RatePerUnit, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATableRate, "VATable Rate")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATableRate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATPercent, "VAT Percent")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATPercent, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.RebatePercent, "Re-Vat Percent")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.RebatePercent, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SDPercent, "SD Percent")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SDPercent, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SupTaxPercent, "Sub Tax Percent")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SupTaxPercent, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ApprovedPrice, "Approved Price")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ApprovedPrice, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ReorderLevel, "Reorder Level")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ReorderLevel, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note, "Note")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.EffectiveDate, "Effective Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.EffectiveDate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProductImage, "Upload Image")
+                </div>
+                <div>
+                    <input style="cursor: pointer;" type="file" name="file" id="file" />
+                </div>
+            </div>
+            
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" onclick="UploadImage()" type="submit" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblProductInfo"></table>
+                <div id="ProductInfoPager"></div>
+            </div>
+        </div>
+    </div>
+}
+
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js" type="text/javascript"></script>
+<iframe id="UploadTarget" name="UploadTarget" onload="UploadImage_Complete();" style="position: absolute; left: -999em; top: -999em;"></iframe>
+<div id="Images"></div>

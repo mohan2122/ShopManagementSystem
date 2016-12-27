@@ -1,0 +1,90 @@
+﻿@model Repository.AccHead
+@{
+    ViewBag.Title = "Account Head";
+}
+
+
+<script src="~/Scripts/ApplicationJS/Accounting_financial/AccHead.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Account Head</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.AccHeadID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyID, "Company Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.CompanyID, (SelectList)ViewData["VdCompanyList"], "-------------Choose Company--------------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AccGroupID, "Acc Group")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.AccGroupID, (SelectList)ViewData["VdAccGroup"], "--------Choose Account Group-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AccountName, "Account Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.AccountName, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.OpenDebitBalance, "Open Debit Balance")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.OpenDebitBalance, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.OpenCreditBalance, "Open Credit Balance")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.OpenCreditBalance, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Active, "Active")
+                </div>
+                <div>
+                    <select id="Active">
+                        <option value="true">Active</option>
+                        <option value="false">Inactive</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note, "Note")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAccHead"></table>
+                <div id="DivAccHeadPager"></div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,44 @@
+﻿@model Repository.UpojillaInfo
+@{
+    ViewBag.Title = "Upozilla";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/Upozilla.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Upozilla Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.UpojillaID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DistrictID, "District")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.DistrictID, (SelectList)ViewData["VdDistrictList"], "        --Choose District--        ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UpojillaName, "Upozilla Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.UpojillaName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblUpojillaInfo"></table>
+                <div id="UpojillaInfoPager"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+}

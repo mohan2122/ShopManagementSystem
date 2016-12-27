@@ -1,0 +1,34 @@
+﻿@model Repository.VATType
+@{
+    ViewBag.Title = "VATType";
+}
+
+<script src="~/Scripts/ApplicationJS/Pos_Setup/VATType.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">VAT Type</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.VATTypeID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATType1, "VAT Type")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATType1, new { @class = "required" })
+                </div>
+
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblVatType"></table>
+                <div id="VatTypePager"></div>
+            </div>
+        </div>
+    </div>
+        
+}

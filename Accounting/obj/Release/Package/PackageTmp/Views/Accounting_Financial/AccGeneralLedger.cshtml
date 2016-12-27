@@ -1,0 +1,191 @@
+﻿@model Repository.Mainledger
+@{
+    ViewBag.Title = "General Ledger";
+}
+<script src="~/Scripts/ApplicationJS/Accounting_financial/AccGeneralLedger.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">General Ledger</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.accGeneralLedger.LedgerID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.TrnID, "Transaction No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accGeneralLedger.TrnID, new { @class = "required",@readonly="readonly" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.VoucherNo, "Voucher No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accGeneralLedger.VoucherNo, new { @class = "required",@readonly="readonly" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl" style="padding-top: 3px;">
+                    @Html.DropDownListFor(m => m.accGeneralLedger.CompanyID, (SelectList)ViewData["VdCompanyList"], "-----Please Seelct Company----")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.AccProjectID, "Account Project")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accGeneralLedger.AccProjectID, (SelectList)ViewData["VdAccProjectList"], "-----Please Seelct Project-------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.VoucherTypeID, "Voucher Type")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accGeneralLedger.VoucherTypeID, (SelectList)ViewData["VdVoucherTypeList"], "--Please Seelct Voucher Type--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.PaymentTypeID, "Payment Type ")
+                </div>
+                <div class="RightColumnDdl" style="margin-bottom: -10px;">
+                    @Html.DropDownListFor(m => m.accGeneralLedger.PaymentTypeID, (SelectList)ViewData["VdPaymentTypeList"], "--Please Seelct PaymentType--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.BankID, "Bank Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.accChequePayment.BankID, (SelectList)ViewData["VdBankList"], "--------Choose Bank-----------", new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.BranchID, "Branch Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.accChequePayment.BranchID, (SelectList)ViewData["VdBranchList"], "--------Choose Branch-----------", new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.ChequeNo, "Cheque No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.ChequeNo, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.Issue_Date, "Issue Date ")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.Issue_Date, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.Cheque_Amount, "Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.Cheque_Amount, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accChequePayment.MaturityDate, "Maturity Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accChequePayment.MaturityDate, new { @Disabled = "true" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accType.AccTypeID, "Account Type")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accType.AccTypeID, (SelectList)ViewData["VdAccTypeList"], "--Please Seelct Account Type--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGroup.AccGroupID, "Account Group")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accGroup.AccGroupID, (SelectList)ViewData["VdAccGroupList"], "--Please Seelct Account Group--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.AccountHeadID, "Debit Account")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accGeneralLedger.AccountHeadID, (SelectList)ViewData["VdAccountList"], "--Please Seelct Debit Account--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accType.AccTypeID, "Account Type")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accType.AccTypeID1, (SelectList)ViewData["VdAccTypeList"], "--Please Seelct Account Type--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGroup.AccGroupID, "Account Group")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accGroup.AccGroupID1, (SelectList)ViewData["VdAccGroupList"], "--Please Seelct Account Group--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.AccountHeadID, "Credit Account")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.accGeneralLedger.AccountHeadID1, (SelectList)ViewData["VdAccountList"], "--Please Seelct Credit Account--")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.Description, "Description")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accGeneralLedger.Description, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.Debit)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accGeneralLedger.Debit, new { @class = "required" })
+                </div>
+            </div>
+           <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accGeneralLedger.Credit)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accGeneralLedger.Credit, new { @class = "required",@readonly="readonly" })
+                </div>
+            </div>
+   
+            <div class="CustombuttonTwoParts">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+            </div>
+            <div>
+                <table id="tblAccLedger"></table>
+                <div id="AccLedgerPager"></div>
+            </div>
+        </div>
+    </div>
+   }

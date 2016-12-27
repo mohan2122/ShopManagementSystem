@@ -1,0 +1,117 @@
+﻿@model Repository.CompanyInfo
+@{
+    ViewBag.Title = "Company Info";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/CompanyInfo.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Company Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.CompanyID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyName, "Company Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.CompanyName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Address)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Address, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.DistrictID, "City")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.DistrictID, (SelectList)ViewData["VdDistrictList"], "-----Choose City-----")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.PostCode)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.PostCode, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CountryID, "Country Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.CountryID, (SelectList)ViewData["VdCountryList"], "-----ChooseCountry-----")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATRegNo, "VATReg:No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATRegNo, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Phone)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Mobile)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Mobile, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+
+                    @Html.LabelFor(m => m.Fax)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Fax, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.eMail, "Email Address")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.eMail, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+            <div class="CustombuttonTwoParts">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblCompanyInfo"></table>
+                <div id="CompanyInfoPager"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+}

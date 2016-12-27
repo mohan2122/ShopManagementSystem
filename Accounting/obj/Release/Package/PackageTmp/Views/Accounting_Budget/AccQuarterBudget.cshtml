@@ -1,0 +1,100 @@
+﻿@model Repository.MainQuarterBudget
+@{
+    ViewBag.Title = "AccQuarterBudget";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_budget/AccQuarterBudget.js"></script>
+
+@using (@Html.BeginForm())
+{    <div class="FormName">Quarter Budget</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.accQuarterBudget.QBudgetID)         
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudget.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl" style="padding-top: 5px;">
+                    @Html.DropDownListFor(m => m.accQuarterBudget.CompanyID, (SelectList)ViewData["VdCompany"], "        --Choose Company--        ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudget.Quarter, "Quarter")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accQuarterBudget.Quarter, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudget.BudgetID, "Budget ID")
+                </div>
+                <div class="RightColumnDdl" style="padding-top: 5px;">
+                    @Html.DropDownListFor(m => m.accQuarterBudget.BudgetID, (SelectList)ViewData["VdBudget"], "        --Choose BudgetID--        ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudget.StartDate, "Start Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accQuarterBudget.StartDate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudget.EndDate, "End Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accQuarterBudget.EndDate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudgetDetail.AccHeadID, "AccountHead ID")
+                </div>
+                <div>
+                     @Html.DropDownListFor(m => m.accQuarterBudgetDetail.AccHeadID, (SelectList)ViewData["VdAccHead"], "        --Choose Account Head--        ")
+                </div>
+            </div>
+            @*<div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudgetDetail.Description, "Description")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accQuarterBudgetDetail.Description, new { @class = "required" })
+                </div>
+            </div>*@
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accQuarterBudgetDetail.Amount, "Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accQuarterBudgetDetail.Amount, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Add" id="btnAdd" />
+            </div>
+
+            <div>
+                <table id="tblAccQBudget">
+                <th>S/L</th>
+                <th>AccountHeadID</th>
+                @*<th>Description</th>*@                
+                <th>Amount</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </table>
+            <div id="divAccQBudgetPager"></div>
+            </div>
+            <div>
+            <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+        </div>
+    </div>
+}

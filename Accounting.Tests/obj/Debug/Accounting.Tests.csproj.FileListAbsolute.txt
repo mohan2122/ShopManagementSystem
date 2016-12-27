@@ -1,0 +1,734 @@
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+E:\Works\DSL\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+F:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+F:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+F:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+D:\DSL-e Business\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+D:\Project1\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+D:\Project1\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+E:\All MVC projects\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+G:\All MVC projects\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+F:\19.2.14\mohsin\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+D:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+D:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+D:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+D:\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+D:\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+D:\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+D:\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+D:\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+D:\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+D:\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+D:\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+D:\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+D:\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+D:\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+D:\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+D:\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+D:\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+D:\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\eBusiness\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+E:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+E:\eBusiness\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Accounting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\EntityFramework.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Repository.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\StructureMap.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\WebActivator.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\WebGrease.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Accounting.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\EntityFramework.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Repository.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\StructureMap.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\StructureMap.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\Accounting\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\EntityFramework.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Repository.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\StructureMap.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\WebActivator.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\WebGrease.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\EntityFramework.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Repository.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\StructureMap.pdb
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\StructureMap.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+E:\Rezaul\Project-DSL\eBusiness\Final Project\New folder\ShopManagementSystem\Accounting.Tests\obj\Debug\Accounting.Tests.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.Tests.dll.config
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.Tests.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.Tests.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Razor.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\EntityFramework.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Repository.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\StructureMap.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\WebActivator.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\WebGrease.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Antlr3.Runtime.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Accounting.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.Razor.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\EntityFramework.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Repository.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\StructureMap.pdb
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\StructureMap.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\obj\Debug\Accounting.Tests.csprojResolveAssemblyReference.cache
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\obj\Debug\Accounting.Tests.dll
+E:\Rezaul Islam\Running Project Class\ShopManagementSystem\Accounting.Tests\obj\Debug\Accounting.Tests.pdb

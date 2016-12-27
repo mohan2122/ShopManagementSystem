@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting", "Accounting\Accounting.csproj", "{242BE29A-5B7D-47CE-94D4-DC32507FAC53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting.Tests", "Accounting.Tests\Accounting.Tests.csproj", "{9788DF95-79BE-48B7-A0E5-ED288F937B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{63075783-295B-4DCA-A585-D3D1C34D267A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242BE29A-5B7D-47CE-94D4-DC32507FAC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242BE29A-5B7D-47CE-94D4-DC32507FAC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242BE29A-5B7D-47CE-94D4-DC32507FAC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242BE29A-5B7D-47CE-94D4-DC32507FAC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9788DF95-79BE-48B7-A0E5-ED288F937B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9788DF95-79BE-48B7-A0E5-ED288F937B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9788DF95-79BE-48B7-A0E5-ED288F937B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9788DF95-79BE-48B7-A0E5-ED288F937B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63075783-295B-4DCA-A585-D3D1C34D267A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63075783-295B-4DCA-A585-D3D1C34D267A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63075783-295B-4DCA-A585-D3D1C34D267A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63075783-295B-4DCA-A585-D3D1C34D267A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

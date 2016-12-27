@@ -1,0 +1,31 @@
+﻿@model Repository.Unit
+@{
+    ViewBag.Title = "Unit";
+}
+<script src="~/Scripts/ApplicationJS/Pos_Setup/Unit.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Unit</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.UnitID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UnitName, "Unit Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.UnitName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblUnit"></table>
+                <div id="UnitPager"></div>
+            </div>
+        </div>
+    </div>
+}

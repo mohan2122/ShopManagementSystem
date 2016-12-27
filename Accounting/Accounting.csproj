@@ -1,0 +1,1780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{242BE29A-5B7D-47CE-94D4-DC32507FAC53}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accounting</RootNamespace>
+    <AssemblyName>Accounting</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository">
+      <HintPath>..\Repository\bin\Debug\Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5.3\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Accounting\FinalcialAccounting\Accounting_FinancialController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\Common\CommonController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\POS\POS_Sales\POS_SalesController.cs" />
+    <Compile Include="Controllers\POS\Setup\POS_SetupController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\POS\POS_Purchase\POS_PurchaseController.cs" />
+    <Compile Include="Controllers\WrappedJsonResult.cs" />
+    <Compile Include="DependencyResolution\IoC.cs" />
+    <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
+    <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\ui-lightness\images\++ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\ui-lightness\images\++ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\ui-lightness\images\++ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\ui-lightness\images\bd.png" />
+    <Content Include="Content\ui-lightness\images\bg.jpg" />
+    <Content Include="Content\ui-lightness\images\bg.png" />
+    <Content Include="Content\ui-lightness\images\BMIS-logo.png" />
+    <Content Include="Content\ui-lightness\images\bond.png" />
+    <Content Include="Content\ui-lightness\images\bond1.png" />
+    <Content Include="Content\ui-lightness\images\brandlogo_bd.gif" />
+    <Content Include="Content\ui-lightness\images\button-bg.jpg" />
+    <Content Include="Content\ui-lightness\images\fields-bg.png" />
+    <Content Include="Content\ui-lightness\images\footer.png" />
+    <Content Include="Content\ui-lightness\images\green-btn-bg.png" />
+    <Content Include="Content\ui-lightness\images\green-btn-bg_hover.png" />
+    <Content Include="Content\ui-lightness\images\header-1.png" />
+    <Content Include="Content\ui-lightness\images\header.png" />
+    <Content Include="Content\ui-lightness\images\login-img.jpg" />
+    <Content Include="Content\ui-lightness\images\menu.png" />
+    <Content Include="Content\ui-lightness\images\New Text Document.txt" />
+    <Content Include="Content\ui-lightness\images\orb.gif" />
+    <Content Include="Content\ui-lightness\images\orb.png" />
+    <Content Include="Content\ui-lightness\images\sep.png" />
+    <Content Include="Content\ui-lightness\images\sidebar-bg.png" />
+    <Content Include="Content\ui-lightness\images\software-name.png" />
+    <Content Include="Content\ui-lightness\images\stop.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\ui-lightness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Content\ui.jqgrid.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\bd.png" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\BMIS-logo.png" />
+    <Content Include="Images\bond.png" />
+    <Content Include="Images\bond1.png" />
+    <Content Include="Images\brandlogo_bd.gif" />
+    <Content Include="Images\button-bg.jpg" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\footer.png" />
+    <Content Include="Images\header-1.png" />
+    <Content Include="Images\header.png" />
+    <Content Include="Images\login-img.jpg" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\New Text Document.txt" />
+    <Content Include="Images\orb.gif" />
+    <Content Include="Images\orb.png" />
+    <Content Include="Images\sep.png" />
+    <Content Include="Images\sidebar-bg.png" />
+    <Content Include="Images\software-name.png" />
+    <Content Include="Images\stop.png" />
+    <Content Include="Scripts\ApplicationJS\Accounting_financial\AccType.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Bank.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Branch.js" />
+    <Content Include="Scripts\ApplicationJS\Common\ColorInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Designation.js" />
+    <Content Include="Scripts\ApplicationJS\Common\DistrictInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\SizeInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Upozilla.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Ward.js" />
+    <Content Include="Scripts\ApplicationJS\Login.js" />
+    <Content Include="Scripts\ApplicationJS\POS_Purchase\PurchaseItem.js" />
+    <Content Include="Scripts\Pos_Setup\Brand.js" />
+    <Content Include="Scripts\ApplicationJS\Accounting_financial\CheckInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\CompanyInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\CountryInfo.js" />
+    <Content Include="Scripts\Pos_Setup\CustomarInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Deparment.js" />
+    <Content Include="Scripts\ApplicationJS\Common\Division.js" />
+    <Content Include="Scripts\ApplicationJS\Accounting_financial\PaymentType.js" />
+    <Content Include="Scripts\Pos_Setup\ProductCategory.js" />
+    <Content Include="Scripts\Pos_Setup\ProductInfo.js" />
+    <Content Include="Scripts\Pos_Setup\SupplierInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\UnionInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Common\VillageInfo.js" />
+    <Content Include="Scripts\ApplicationJS\Accounting_financial\VoucherType.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery\docs\accordion.html" />
+    <Content Include="Scripts\jquery\docs\addClass.html" />
+    <Content Include="Scripts\jquery\docs\animate.html" />
+    <Content Include="Scripts\jquery\docs\autocomplete.html" />
+    <Content Include="Scripts\jquery\docs\button.html" />
+    <Content Include="Scripts\jquery\docs\datepicker.html" />
+    <Content Include="Scripts\jquery\docs\dialog.html" />
+    <Content Include="Scripts\jquery\docs\draggable.html" />
+    <Content Include="Scripts\jquery\docs\droppable.html" />
+    <Content Include="Scripts\jquery\docs\effect-blind.html" />
+    <Content Include="Scripts\jquery\docs\effect-bounce.html" />
+    <Content Include="Scripts\jquery\docs\effect-clip.html" />
+    <Content Include="Scripts\jquery\docs\effect-drop.html" />
+    <Content Include="Scripts\jquery\docs\effect-explode.html" />
+    <Content Include="Scripts\jquery\docs\effect-fade.html" />
+    <Content Include="Scripts\jquery\docs\effect-fold.html" />
+    <Content Include="Scripts\jquery\docs\effect-highlight.html" />
+    <Content Include="Scripts\jquery\docs\effect-puff.html" />
+    <Content Include="Scripts\jquery\docs\effect-pulsate.html" />
+    <Content Include="Scripts\jquery\docs\effect-scale.html" />
+    <Content Include="Scripts\jquery\docs\effect-shake.html" />
+    <Content Include="Scripts\jquery\docs\effect-size.html" />
+    <Content Include="Scripts\jquery\docs\effect-slide.html" />
+    <Content Include="Scripts\jquery\docs\effect-transfer.html" />
+    <Content Include="Scripts\jquery\docs\effect.html" />
+    <Content Include="Scripts\jquery\docs\hide.html" />
+    <Content Include="Scripts\jquery\docs\position.html" />
+    <Content Include="Scripts\jquery\docs\progressbar.html" />
+    <Content Include="Scripts\jquery\docs\removeClass.html" />
+    <Content Include="Scripts\jquery\docs\resizable.html" />
+    <Content Include="Scripts\jquery\docs\selectable.html" />
+    <Content Include="Scripts\jquery\docs\show.html" />
+    <Content Include="Scripts\jquery\docs\slider.html" />
+    <Content Include="Scripts\jquery\docs\sortable.html" />
+    <Content Include="Scripts\jquery\docs\switchClass.html" />
+    <Content Include="Scripts\jquery\docs\tabs.html" />
+    <Content Include="Scripts\jquery\docs\toggle.html" />
+    <Content Include="Scripts\jquery\docs\toggleClass.html" />
+    <Content Include="Scripts\jquery\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="Scripts\jquery\external\jquery.cookie.js" />
+    <Content Include="Scripts\jquery\external\jquery.metadata.js" />
+    <Content Include="Scripts\jquery\external\qunit.css" />
+    <Content Include="Scripts\jquery\external\qunit.js" />
+    <Content Include="Scripts\jquery\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\jquery\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery\jquery.cookie.js" />
+    <Content Include="Scripts\jquery\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\jquery\jquery.jqGrid.src.js" />
+    <Content Include="Scripts\jquery\tests\index.html" />
+    <Content Include="Scripts\jquery\tests\jquery-1.3.2.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.4.2.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.4.3.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.4.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.5.2.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.5.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.6.1.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.6.2.js" />
+    <Content Include="Scripts\jquery\tests\jquery-1.6.js" />
+    <Content Include="Scripts\jquery\tests\jquery.js" />
+    <Content Include="Scripts\jquery\tests\jquery.simulate.js" />
+    <Content Include="Scripts\jquery\tests\static\accordion\default.html" />
+    <Content Include="Scripts\jquery\tests\static\accordion\dl.html" />
+    <Content Include="Scripts\jquery\tests\static\accordion\ul.html" />
+    <Content Include="Scripts\jquery\tests\static\button\default.html" />
+    <Content Include="Scripts\jquery\tests\static\datepicker\datepicker.html" />
+    <Content Include="Scripts\jquery\tests\static\datepicker\default.html" />
+    <Content Include="Scripts\jquery\tests\static\dialog\default.html" />
+    <Content Include="Scripts\jquery\tests\static\dialog\dialog.html" />
+    <Content Include="Scripts\jquery\tests\static\draggable\default.html" />
+    <Content Include="Scripts\jquery\tests\static\droppable\default.html" />
+    <Content Include="Scripts\jquery\tests\static\highlight_error.html" />
+    <Content Include="Scripts\jquery\tests\static\icons.html" />
+    <Content Include="Scripts\jquery\tests\static\index.html" />
+    <Content Include="Scripts\jquery\tests\static\menu\all-menus-icons.html" />
+    <Content Include="Scripts\jquery\tests\static\menu\default.html" />
+    <Content Include="Scripts\jquery\tests\static\overlay.html" />
+    <Content Include="Scripts\jquery\tests\static\progressbar\default.html" />
+    <Content Include="Scripts\jquery\tests\static\progressbar\progressbar.html" />
+    <Content Include="Scripts\jquery\tests\static\resizable\default.html" />
+    <Content Include="Scripts\jquery\tests\static\selectable\default.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\default.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\default_vertical.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_horizontal.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_horizontal_range.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_horizontal_range_max.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_horizontal_range_min.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_vertical.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_vertical_range.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_vertical_range_max.html" />
+    <Content Include="Scripts\jquery\tests\static\slider\slider_vertical_range_min.html" />
+    <Content Include="Scripts\jquery\tests\static\sortable\default.html" />
+    <Content Include="Scripts\jquery\tests\static\static.css" />
+    <Content Include="Scripts\jquery\tests\static\static.js" />
+    <Content Include="Scripts\jquery\tests\static\tabs\default.html" />
+    <Content Include="Scripts\jquery\tests\static\tabs\tabs.html" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion.html" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\accordion_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\all.html" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete.html" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\autocomplete_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\remote_object_array_labels.txt" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\remote_object_array_values.txt" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\remote_string_array.txt" />
+    <Content Include="Scripts\jquery\tests\unit\button\button.html" />
+    <Content Include="Scripts\jquery\tests\unit\button\button_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\button\button_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\button\button_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\button\button_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\button\button_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\button\button_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\core\core.html" />
+    <Content Include="Scripts\jquery\tests\unit\core\core.js" />
+    <Content Include="Scripts\jquery\tests\unit\core\selector.js" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker.html" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\datepicker_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\defaults.html" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog.html" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\dialog_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable.html" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\draggable_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable.html" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\droppable_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\images\jqueryui_32x32.png" />
+    <Content Include="Scripts\jquery\tests\unit\index.html" />
+    <Content Include="Scripts\jquery\tests\unit\position\position.html" />
+    <Content Include="Scripts\jquery\tests\unit\position\position_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar.html" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\progressbar_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\images\test.jpg" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable.html" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\resizable_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable.html" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\selectable_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider.html" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\slider\slider_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable.html" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\sortable_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\swarminject.js" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\data\test.html" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\spinner.gif" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs.html" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs_defaults.js" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs_events.js" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs_methods.js" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs_options.js" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\tabs_tickets.js" />
+    <Content Include="Scripts\jquery\tests\unit\testsuite.js" />
+    <Content Include="Scripts\jquery\tests\unit\testsuites.js" />
+    <Content Include="Scripts\jquery\tests\unit\widget\widget.html" />
+    <Content Include="Scripts\jquery\tests\unit\widget\widget_core.js" />
+    <Content Include="Scripts\jquery\tests\unit\widget\widget_tickets.js" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_dl.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_method_destroy.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_method_disable.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_animated_bounceslide.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_animated_easeslide.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_animated_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_animated_slide.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_animated_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_autoHeight_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_autoHeight_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_fillSpace_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_option_navigation_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_ticket_4322.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_ticket_4331.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_ticket_4444.html" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\accordion_ul.html" />
+    <Content Include="Scripts\jquery\tests\visual\all.css" />
+    <Content Include="Scripts\jquery\tests\visual\all.html" />
+    <Content Include="Scripts\jquery\tests\visual\animate\animate_backgroundColor_hex.html" />
+    <Content Include="Scripts\jquery\tests\visual\animate\animate_backgroundColor_rgb.html" />
+    <Content Include="Scripts\jquery\tests\visual\animate\animate_color_hex.html" />
+    <Content Include="Scripts\jquery\tests\visual\animate\animate_color_rgb.html" />
+    <Content Include="Scripts\jquery\tests\visual\autocomplete\autocomplete.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_disabled_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_input_type_checkbox.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_option_disabled_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_performance.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_ticket_5254.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_ticket_5261.html" />
+    <Content Include="Scripts\jquery\tests\visual\button\button_ticket_5278.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\accordion_dialog.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\accordion_tabs.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\datepicker_dialog.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\draggable_accordion.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\draggable_accordion_accordion_tabs_draggable.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\sortable_accordion_sortable_tabs.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\tabs_tabs.html" />
+    <Content Include="Scripts\jquery\tests\visual\compound\widgets_in_dialog.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\calendar.gif" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker_multi_inline.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker_ticket_4071.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker_ticket_4240.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker_ticket_4443.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker_ticket_5676.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\datepicker_ticket_7552.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\multimonth.html" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\viewport.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_on_page_with_large_dom.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_on_page_with_scrollbars.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_option_buttons_OK_Cancel.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_option_closeOnEscape_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_option_closeOnEscape_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_option_modal_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_option_modal_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_option_position_right_top.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_ticket_4350.html" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\dialog_ticket_4826.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable.scroll.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable_option_containment_array.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable_option_cursorAt_object.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable_option_handle_selector.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable_option_iframeFix_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable_option_iframeFix_selector.html" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\draggable_option_iframeFix_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable.css" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable.html" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable_option_accept_default.html" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable_option_accept_function.html" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable_option_accept_selector.html" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable_ticket_4087.html" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\droppable_ticket_4088.html" />
+    <Content Include="Scripts\jquery\tests\visual\effects.all.css" />
+    <Content Include="Scripts\jquery\tests\visual\effects.all.html" />
+    <Content Include="Scripts\jquery\tests\visual\effects.all.js" />
+    <Content Include="Scripts\jquery\tests\visual\index.html" />
+    <Content Include="Scripts\jquery\tests\visual\menu\contextmenu.html" />
+    <Content Include="Scripts\jquery\tests\visual\menu\drilldown.html" />
+    <Content Include="Scripts\jquery\tests\visual\menu\menu.html" />
+    <Content Include="Scripts\jquery\tests\visual\menu\nested.html" />
+    <Content Include="Scripts\jquery\tests\visual\mouse\mouse_ticket_6946.html" />
+    <Content Include="Scripts\jquery\tests\visual\position\position.html" />
+    <Content Include="Scripts\jquery\tests\visual\position\position_margin.html" />
+    <Content Include="Scripts\jquery\tests\visual\progressbar\progressbar.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\images\test.png" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_alsoResize_child.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_0.5.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_1.0.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_1.5.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_maxHeight_150.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_maxWidth_150.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_minHeight_50.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_minWidth_50.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_w100xh100.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_w100xh50.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_option_aspectRatio_preserve_w50xh100.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_ticket_3053.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_ticket_4199.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_ticket_4217.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_ticket_4940.html" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\resizable_ticket_5335.html" />
+    <Content Include="Scripts\jquery\tests\visual\selectable\selectable.html" />
+    <Content Include="Scripts\jquery\tests\visual\selectable\selectable_ticket_4341.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_horizontal.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_horizontal_range.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_horizontal_range_max.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_horizontal_range_min.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_in_container_with_scrollbars.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_method_destroy.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_method_disable.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_animate_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_animate_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_max_3.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_max_30.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_max_300.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_min_-3.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_min_-30.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_min_-300.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_orientation_horizontal.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_orientation_vertical.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_range_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_range_max.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_range_min.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_range_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_step_25.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_step_5.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_values_25_50_75.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_values_25_75.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_values_50.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_value_3.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_option_value_30.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_ticket_3736.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_ticket_3762.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_ticket_4385.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_ticket_4467.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_vertical.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_vertical_range.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_vertical_range_max.html" />
+    <Content Include="Scripts\jquery\tests\visual\slider\slider_vertical_range_min.html" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\sortable.html" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\sortable_massive_scale.html" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\sortable_option_revert_false.html" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\sortable_option_revert_true.html" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\sortable_ticket_4231.html" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\sortable_ticket_5355.html" />
+    <Content Include="Scripts\jquery\tests\visual\tabs\tabs.html" />
+    <Content Include="Scripts\jquery\tests\visual\theme.html" />
+    <Content Include="Scripts\jquery\tests\visual\visual.css" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\jquery-ui.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.all.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.base.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.button.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.core.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.slider.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Scripts\jquery\themes\base\jquery.ui.theme.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.all.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.base.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Scripts\jquery\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.accordion.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.all.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.autocomplete.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.base.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.button.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.core.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.datepicker.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.dialog.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.progressbar.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.resizable.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.selectable.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.slider.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.tabs.css" />
+    <Content Include="Scripts\jquery\themes\smoothness\jquery.ui.theme.css" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-kz.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="Scripts\jquery\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="Scripts\jquery\ui\jquery-ui.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.blind.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.bounce.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.clip.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.core.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.drop.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.explode.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.fade.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.fold.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.highlight.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.pulsate.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.scale.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.shake.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.slide.js" />
+    <Content Include="Scripts\jquery\ui\jquery.effects.transfer.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.accordion.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.autocomplete.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.button.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.dialog.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.draggable.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.droppable.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.mouse.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.position.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.progressbar.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.resizable.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.selectable.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.slider.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.sortable.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.tabs.js" />
+    <Content Include="Scripts\jquery\ui\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery-ui-i18n.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-af.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ar-DZ.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ar.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-az.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-bg.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-bs.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ca.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-cs.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-da.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-de.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-el.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-en-AU.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-en-GB.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-en-NZ.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-eo.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-es.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-et.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-eu.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-fa.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-fi.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-fo.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-fr-CH.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-fr.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-gl.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-he.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-hr.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-hu.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-hy.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-id.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-is.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-it.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ja.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ko.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-kz.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-lt.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-lv.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ml.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ms.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-nl.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-no.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-pl.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-pt-BR.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-pt.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-rm.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ro.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ru.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-sk.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-sl.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-sq.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-sr-SR.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-sr.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-sv.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-ta.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-th.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-tj.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-tr.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-uk.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-vi.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-zh-CN.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-zh-HK.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\i18n\jquery.ui.datepicker-zh-TW.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="Scripts\jquery\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Accounting_Financial\PaymentType.cshtml" />
+    <Content Include="Scripts\jquery\tests\static\accordion\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\accordion\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\accordion\.svn\text-base\dl.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\accordion\.svn\text-base\ul.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\button\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\button\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\datepicker\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\datepicker\.svn\text-base\datepicker.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\datepicker\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\dialog\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\dialog\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\dialog\.svn\text-base\dialog.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\draggable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\draggable\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\droppable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\droppable\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\menu\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\menu\.svn\text-base\all-menus-icons.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\menu\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\progressbar\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\progressbar\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\progressbar\.svn\text-base\progressbar.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\resizable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\resizable\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\selectable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\selectable\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\default_vertical.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_horizontal.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_horizontal_range.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_horizontal_range_max.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_horizontal_range_min.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_vertical.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_vertical_range.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_vertical_range_max.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\slider\.svn\text-base\slider_vertical_range_min.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\sortable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\sortable\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\tabs\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\static\tabs\.svn\text-base\default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\static\tabs\.svn\text-base\tabs.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\accordion\.svn\text-base\accordion_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\autocomplete_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\remote_object_array_labels.txt.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\remote_object_array_values.txt.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\autocomplete\.svn\text-base\remote_string_array.txt.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\button\.svn\text-base\button_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\core\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\core\.svn\text-base\core.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\core\.svn\text-base\core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\core\.svn\text-base\selector.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\datepicker\.svn\text-base\datepicker_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\dialog\.svn\text-base\dialog_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\draggable\.svn\text-base\draggable_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\droppable\.svn\text-base\droppable_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\images\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\images\.svn\prop-base\jqueryui_32x32.png.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\images\.svn\text-base\jqueryui_32x32.png.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\position\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\position\.svn\text-base\position.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\position\.svn\text-base\position_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\progressbar\.svn\text-base\progressbar_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\.svn\text-base\resizable_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\images\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\images\.svn\prop-base\test.jpg.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\resizable\images\.svn\text-base\test.jpg.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\selectable\.svn\text-base\selectable_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\slider\.svn\text-base\slider_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\sortable\.svn\text-base\sortable_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\prop-base\spinner.gif.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\spinner.gif.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs_defaults.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs_events.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs_methods.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs_options.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\.svn\text-base\tabs_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\data\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\tabs\data\.svn\text-base\test.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\widget\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\unit\widget\.svn\text-base\widget.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\widget\.svn\text-base\widget_core.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\unit\widget\.svn\text-base\widget_tickets.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\all.css.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\all.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\effects.all.css.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\effects.all.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\effects.all.js.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\index.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\theme.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\.svn\text-base\visual.css.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_dl.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_method_destroy.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_method_disable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_animated_bounceslide.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_animated_easeslide.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_animated_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_animated_slide.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_animated_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_autoHeight_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_autoHeight_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_fillSpace_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_option_navigation_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_ticket_4322.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_ticket_4331.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_ticket_4444.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\accordion\.svn\text-base\accordion_ul.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\animate\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\animate\.svn\text-base\animate_backgroundColor_hex.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\animate\.svn\text-base\animate_backgroundColor_rgb.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\animate\.svn\text-base\animate_color_hex.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\animate\.svn\text-base\animate_color_rgb.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\autocomplete\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\autocomplete\.svn\text-base\autocomplete.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_disabled_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_input_type_checkbox.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_option_disabled_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_performance.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_ticket_5254.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_ticket_5261.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\button\.svn\text-base\button_ticket_5278.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\accordion_dialog.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\accordion_tabs.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\datepicker_dialog.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\draggable_accordion.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\draggable_accordion_accordion_tabs_draggable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\sortable_accordion_sortable_tabs.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\tabs_tabs.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\compound\.svn\text-base\widgets_in_dialog.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\prop-base\calendar.gif.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\calendar.gif.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker_multi_inline.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker_ticket_4071.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker_ticket_4240.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker_ticket_4443.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker_ticket_5676.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\datepicker_ticket_7552.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\multimonth.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\datepicker\.svn\text-base\viewport.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_on_page_with_large_dom.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_on_page_with_scrollbars.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_option_buttons_OK_Cancel.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_option_closeOnEscape_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_option_closeOnEscape_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_option_modal_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_option_modal_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_option_position_right_top.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_ticket_4350.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\dialog\.svn\text-base\dialog_ticket_4826.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable.scroll.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable_option_containment_array.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable_option_cursorAt_object.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable_option_handle_selector.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable_option_iframeFix_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable_option_iframeFix_selector.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\draggable\.svn\text-base\draggable_option_iframeFix_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable.css.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable_option_accept_default.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable_option_accept_function.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable_option_accept_selector.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable_ticket_4087.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\droppable\.svn\text-base\droppable_ticket_4088.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\menu\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\menu\.svn\text-base\contextmenu.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\menu\.svn\text-base\drilldown.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\menu\.svn\text-base\menu.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\menu\.svn\text-base\nested.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\mouse\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\mouse\.svn\text-base\mouse_ticket_6946.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\position\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\position\.svn\text-base\position.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\position\.svn\text-base\position_margin.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\progressbar\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\progressbar\.svn\text-base\progressbar.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_alsoResize_child.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_0.5.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_1.0.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_1.5.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_maxHeight_150.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_maxWidth_150.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_minHeight_50.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_minWidth_50.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_w100xh100.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_w100xh50.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_option_aspectRatio_preserve_w50xh100.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_ticket_3053.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_ticket_4199.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_ticket_4217.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_ticket_4940.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\.svn\text-base\resizable_ticket_5335.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\images\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\images\.svn\prop-base\test.png.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\resizable\images\.svn\text-base\test.png.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\selectable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\selectable\.svn\text-base\selectable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\selectable\.svn\text-base\selectable_ticket_4341.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_horizontal.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_horizontal_range.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_horizontal_range_max.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_horizontal_range_min.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_in_container_with_scrollbars.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_method_destroy.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_method_disable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_animate_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_animate_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_max_3.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_max_30.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_max_300.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_min_-3.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_min_-30.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_min_-300.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_orientation_horizontal.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_orientation_vertical.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_range_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_range_max.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_range_min.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_range_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_step_25.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_step_5.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_values_25_50_75.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_values_25_75.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_values_50.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_value_3.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_option_value_30.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_ticket_3736.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_ticket_3762.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_ticket_4385.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_ticket_4467.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_vertical.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_vertical_range.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_vertical_range_max.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\slider\.svn\text-base\slider_vertical_range_min.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\text-base\sortable.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\text-base\sortable_massive_scale.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\text-base\sortable_option_revert_false.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\text-base\sortable_option_revert_true.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\text-base\sortable_ticket_4231.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\sortable\.svn\text-base\sortable_ticket_5355.html.svn-base" />
+    <Content Include="Scripts\jquery\tests\visual\tabs\.svn\entries" />
+    <Content Include="Scripts\jquery\tests\visual\tabs\.svn\text-base\tabs.html.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\entries" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_flat_0_aaaaaa_40x100.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_flat_75_ffffff_40x100.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_glass_55_fbf9ee_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_glass_65_ffffff_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_glass_75_dadada_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_glass_75_e6e6e6_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_glass_95_fef1ec_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-bg_highlight-soft_75_cccccc_1x100.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-icons_222222_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-icons_2e83ff_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-icons_454545_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-icons_888888_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\prop-base\ui-icons_cd0a0a_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_flat_0_aaaaaa_40x100.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_flat_75_ffffff_40x100.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_glass_55_fbf9ee_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_glass_65_ffffff_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_glass_75_dadada_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_glass_75_e6e6e6_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_glass_95_fef1ec_1x400.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-bg_highlight-soft_75_cccccc_1x100.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-icons_222222_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-icons_2e83ff_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-icons_454545_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-icons_888888_256x240.png.svn-base" />
+    <Content Include="Scripts\jquery\themes\base\minified\images\.svn\text-base\ui-icons_cd0a0a_256x240.png.svn-base" />
+    <Content Include="Views\Common\Bank.cshtml" />
+    <Content Include="Views\Common\Branch.cshtml" />
+    <Content Include="Views\Accounting_Financial\VoucherType.cshtml" />
+    <Content Include="Views\POS_Setup\VATType.cshtml" />
+    <Content Include="Views\POS_Setup\TarrifType.cshtml" />
+    <Content Include="Views\POS_Setup\ProductInfo.cshtml" />
+    <Content Include="Views\POS_Setup\Brand.cshtml" />
+    <Content Include="Views\POS_Setup\ProductCategory.cshtml" />
+    <Content Include="Views\POS_Setup\Unit.cshtml" />
+    <Content Include="Views\Common\Companyinfo.cshtml" />
+    <Content Include="Views\POS_Setup\CustomerInfo.cshtml" />
+    <Content Include="Views\POS_Setup\ExpenseInfo.cshtml" />
+    <Content Include="Views\Accounting_Financial\CheckInfo.cshtml" />
+    <Content Include="Views\POS_Setup\TaxSources.cshtml" />
+    <Content Include="Views\Shared\AdminMenu.cshtml" />
+    <Content Include="Views\Common\CountryInfo.cshtml" />
+    <Content Include="Views\Common\District.cshtml" />
+    <Content Include="Views\Common\Department.cshtml" />
+    <Content Include="Views\Common\TblDivision.cshtml" />
+    <Content Include="Views\Common\UnionInfo.cshtml" />
+    <Content Include="Views\Common\VillageInfo.cshtml" />
+    <Content Include="Views\Common\Ward.cshtml" />
+    <Content Include="Views\Common\Upozilla.cshtml" />
+    <Content Include="Views\Common\TblDesignation.cshtml" />
+    <Content Include="Views\POS_Purchase\PurchaseItem.cshtml" />
+    <Content Include="Views\POS_Sales\SalesItem.cshtml" />
+    <Content Include="Views\POS_Purchase\PurchaseReturn.cshtml" />
+    <Content Include="Views\POS_Setup\SupplierInfo.cshtml" />
+    <Content Include="Views\POS_Sales\SalesReturn.cshtml" />
+    <Content Include="Views\Common\ColorInfo.cshtml" />
+    <Content Include="Views\Common\SizeInfo.cshtml" />
+    <Content Include="Views\Accounting_Financial\AccGeneralLedger.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Scripts\ApplicationJS\POS_Sales\" />
+    <Folder Include="Scripts\jquery\demos\accordion\" />
+    <Folder Include="Scripts\jquery\demos\addClass\" />
+    <Folder Include="Scripts\jquery\demos\animate\" />
+    <Folder Include="Scripts\jquery\demos\autocomplete\images\" />
+    <Folder Include="Scripts\jquery\demos\button\" />
+    <Folder Include="Scripts\jquery\demos\datepicker\images\" />
+    <Folder Include="Scripts\jquery\demos\dialog\" />
+    <Folder Include="Scripts\jquery\demos\draggable\" />
+    <Folder Include="Scripts\jquery\demos\droppable\images\" />
+    <Folder Include="Scripts\jquery\demos\effect\" />
+    <Folder Include="Scripts\jquery\demos\hide\" />
+    <Folder Include="Scripts\jquery\demos\images\" />
+    <Folder Include="Scripts\jquery\demos\position\images\" />
+    <Folder Include="Scripts\jquery\demos\progressbar\images\" />
+    <Folder Include="Scripts\jquery\demos\removeClass\" />
+    <Folder Include="Scripts\jquery\demos\resizable\" />
+    <Folder Include="Scripts\jquery\demos\selectable\" />
+    <Folder Include="Scripts\jquery\demos\show\" />
+    <Folder Include="Scripts\jquery\demos\slider\" />
+    <Folder Include="Scripts\jquery\demos\sortable\" />
+    <Folder Include="Scripts\jquery\demos\switchClass\" />
+    <Folder Include="Scripts\jquery\demos\tabs\ajax\" />
+    <Folder Include="Scripts\jquery\demos\toggleClass\" />
+    <Folder Include="Scripts\jquery\demos\toggle\" />
+    <Folder Include="Scripts\jquery\demos\widget\" />
+    <Folder Include="Scripts\jquery\tests\static\accordion\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\accordion\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\accordion\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\accordion\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\button\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\button\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\button\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\button\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\button\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\datepicker\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\datepicker\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\datepicker\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\datepicker\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\datepicker\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\dialog\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\dialog\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\dialog\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\dialog\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\draggable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\draggable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\draggable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\draggable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\draggable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\droppable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\droppable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\droppable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\droppable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\droppable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\menu\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\menu\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\menu\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\menu\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\menu\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\progressbar\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\progressbar\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\progressbar\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\progressbar\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\progressbar\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\resizable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\resizable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\resizable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\resizable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\resizable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\selectable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\selectable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\selectable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\selectable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\selectable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\slider\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\slider\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\slider\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\slider\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\slider\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\sortable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\sortable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\sortable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\sortable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\sortable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\static\tabs\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\tabs\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\static\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\static\tabs\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\static\tabs\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\accordion\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\accordion\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\accordion\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\accordion\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\autocomplete\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\autocomplete\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\autocomplete\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\autocomplete\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\autocomplete\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\button\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\button\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\button\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\button\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\button\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\core\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\core\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\core\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\core\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\core\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\datepicker\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\datepicker\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\datepicker\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\datepicker\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\datepicker\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\dialog\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\dialog\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\dialog\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\dialog\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\draggable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\draggable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\draggable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\draggable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\draggable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\droppable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\droppable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\droppable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\droppable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\droppable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\images\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\images\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\images\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\images\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\position\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\position\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\position\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\position\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\position\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\progressbar\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\progressbar\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\progressbar\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\progressbar\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\progressbar\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\images\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\images\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\images\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\resizable\images\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\selectable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\selectable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\selectable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\selectable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\selectable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\slider\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\slider\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\slider\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\slider\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\slider\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\sortable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\sortable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\sortable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\sortable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\sortable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\data\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\data\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\data\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\data\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\tabs\data\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\widget\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\widget\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\widget\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\unit\widget\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\unit\widget\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\accordion\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\accordion\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\accordion\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\accordion\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\animate\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\animate\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\animate\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\animate\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\animate\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\autocomplete\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\autocomplete\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\autocomplete\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\autocomplete\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\autocomplete\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\button\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\button\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\button\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\button\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\button\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\compound\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\compound\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\compound\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\compound\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\compound\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\datepicker\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\datepicker\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\datepicker\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\datepicker\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\dialog\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\dialog\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\dialog\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\dialog\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\draggable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\draggable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\draggable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\draggable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\draggable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\droppable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\droppable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\droppable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\droppable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\droppable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\menu\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\menu\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\menu\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\menu\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\menu\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\mouse\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\mouse\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\mouse\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\mouse\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\mouse\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\position\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\position\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\position\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\position\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\position\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\progressbar\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\progressbar\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\progressbar\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\progressbar\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\progressbar\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\images\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\images\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\images\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\resizable\images\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\selectable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\selectable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\selectable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\selectable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\selectable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\slider\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\slider\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\slider\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\slider\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\slider\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\sortable\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\sortable\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\sortable\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\sortable\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\sortable\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\tabs\.svn\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\tabs\.svn\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\tests\visual\tabs\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\tests\visual\tabs\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\jquery\themes\base\minified\images\.svn\props\" />
+    <Folder Include="Scripts\jquery\themes\base\minified\images\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\jquery\themes\base\minified\images\.svn\tmp\props\" />
+    <Folder Include="Scripts\jquery\themes\base\minified\images\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6701/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

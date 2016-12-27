@@ -1,0 +1,103 @@
+﻿@model Repository.MainPurchaseReturn
+@{
+    ViewBag.Title = "PurchaseReturn";
+}
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Purchase Return</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.purchaseRetrun.PurchaseReturnDate, "Return Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.purchaseRetrun.PurchaseReturnDate)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.supplier.SupplierName, "Supplier Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.supplier.SupplierName, (SelectList)ViewData["VdListSuplier"], "--------Choose Supplier-----------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.purchase.PID, "Purchase Inv.ID")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.purchase.PID, (SelectList)ViewData["VdListPurchase"], "--------Choose PurchaseInvID-----------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.purchase.PurchaseDate, "Purchase Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.purchase.PurchaseDate)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.PurchaseDetails, "PurchaseDetails")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.PurchaseDetails)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.ProductName, "Product Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.productInfo.ProductName, (SelectList)ViewData["VdListProduct"], "--------Choose Product---------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Price, "Price")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Price)
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Quantity, "Quantity")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Quantity)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Total, "Total")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Total)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Reason, "Reason")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Reason)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAccLedger"></table>
+                <div id="AccLedgerPager"></div>
+            </div>
+        </div>
+    </div>
+    
+}

@@ -1,0 +1,34 @@
+﻿@model Repository.TarrifType
+@{
+    ViewBag.Title = "TarrifType";
+}
+
+
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Tarrif Type</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.TarrifTypeID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.TarrifType1, "Tarrif Type")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.TarrifType1, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblTarrifType"></table>
+                <div id="TarrifTypePager"></div>
+            </div>
+        </div>
+    </div> 
+}

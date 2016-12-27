@@ -1,0 +1,42 @@
+﻿@model Repository.UnionInfo
+@{
+    ViewBag.Title = "UnionInfo";
+}
+
+<script src="~/Scripts/ApplicationJS/Common/UnionInfo.js"></script>
+
+@using (@Html.BeginForm())
+{    <div class="FormName">Union Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.UnionID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UpojillaID, "Upojilla ID")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.UpojillaID, (SelectList)ViewData["VdUpojillaList"], " --Choose Upojilla-- ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UnionName, "Union Name ")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.UnionName)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblUnionInfo"></table>
+                <div id="UnionInfoPager"></div>
+            </div>
+        </div>
+    </div>
+
+}
+

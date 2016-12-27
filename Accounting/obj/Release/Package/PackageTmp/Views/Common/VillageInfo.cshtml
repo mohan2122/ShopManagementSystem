@@ -1,0 +1,42 @@
+﻿@model Repository.VillageInfo
+@{
+    ViewBag.Title = "VillageInfo";
+}
+<script src="~/Scripts/ApplicationJS/Common/VillageInfo.js"></script>
+
+@using (@Html.BeginForm())
+{  
+    <div class="FormName">Village Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.VillageID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.WardID, "Ward ID ")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.WardID, (SelectList)ViewData["VdwardList"], " --Choose Ward-- ")
+
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VillageName, "Village Name  ")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VillageName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblvillageInfo"></table>
+                <div id="villageInfoPager"></div>
+            </div>
+        </div>
+    </div>
+
+}

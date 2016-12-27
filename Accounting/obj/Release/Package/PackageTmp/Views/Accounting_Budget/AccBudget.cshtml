@@ -1,0 +1,83 @@
+﻿@model Repository.MainBudget
+@{
+    ViewBag.Title = "Budget";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_budget/AccBudget.js"></script>
+
+@using (@Html.BeginForm())
+{    <div class="FormName">Budget</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.accBudget.BudgetID)         
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accBudget.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl" style="padding-top: 3px;">
+                    @Html.DropDownListFor(m => m.accBudget.CompanyID, (SelectList)ViewData["VdCompany"], "        --Choose Company--        ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accBudget.BudgetFor, "Budget For")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accBudget.BudgetFor, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accBudget.BudgetDate, "Budget Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accBudget.BudgetDate, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accBudgetDetail.AccHeadID, "AccountHead ID")
+                </div>
+                <div>
+                     @Html.DropDownListFor(m => m.accBudgetDetail.AccHeadID, (SelectList)ViewData["VdAccHead"], "        --Choose Account Head--        ")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accBudgetDetail.Description, "Description")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accBudgetDetail.Description, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.accBudgetDetail.Amount, "Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.accBudgetDetail.Amount, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Add" id="btnAdd" />
+            </div>
+
+            <div>
+                <table id="tblAccBudget">
+                <th>S/L</th>
+                <th>AccountHeadID</th>
+                <th>Description</th>                
+                <th>Amount</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </table>
+            <div id="divAccBudgetPager"></div>
+            </div>
+            <div class="CustombuttonTwoParts">
+            <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+            </div>
+        </div>
+    </div>
+}

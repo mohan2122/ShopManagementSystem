@@ -1,0 +1,113 @@
+﻿@model Repository.SupplierInfo
+@{
+    ViewBag.Title = "SupplierInfo";
+}
+
+<script src="~/Scripts/ApplicationJS/Pos_Setup/SupplierInfo.js"></script>
+
+
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Supplier Information</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.SupplierID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SupplierCode, "Supplie rCode")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SupplierCode, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SupplierName, "Supplier Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SupplierName, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ContactPerson, "Contact Person")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ContactPerson, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Address)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Address, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.SupplierType, "Supplier Type")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.SupplierType, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VATRegNo, "VAT Reg: No")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VATRegNo, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Country, "Country Name")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.Country, (SelectList)ViewData["VdCountryList"], "---ChooseCountry---")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Phone, "Phone No:")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+
+                    @Html.LabelFor(m => m.Mobile, "Mobile No:")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Mobile, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.eMail, "Email Address")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.eMail, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblSupplierInfo"></table>
+                <div id="SupplierInfoPager"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+}

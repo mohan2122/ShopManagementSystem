@@ -1,0 +1,48 @@
+﻿@model Repository.AccChequePayment
+@{
+    ViewBag.Title = "Bank Reconsilation";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_financial/BankReconcilation.js"></script>
+
+@using (Html.BeginForm())
+{
+    
+    
+    <div class="FormName">Bank Reconcilation</div>
+     <div class="MainDiv">
+         <div class="LeftPart">
+           @* @Html.HiddenFor(m => m.ChequeNo)*@
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Issue_Date, "Start Date :", new { @class = "required" })) 
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Issue_Date) 
+                </div>                
+            </div>
+             <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.MaturityDate, "End Date :") 
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.MaturityDate) 
+                </div>                
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Submit" id="btnSubmit" />
+            </div>
+            
+         <div>
+                <table id="tblChequeRegister"></table>
+                <div id="ChequeRegisterPager"></div>
+         
+            </div>
+             <div>
+                     <table id="tblChequeRegister111"></table>
+                     <div id="ChequeRegisterPager11111"></div>
+             </div>
+             </div>
+             
+    </div>
+}

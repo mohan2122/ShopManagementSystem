@@ -1,0 +1,42 @@
+﻿@model Repository.VoucherType
+@{
+    ViewBag.Title = "Voucher Type";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_financial/VoucherType.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Voucher Type</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+             @Html.HiddenFor(m => m.VoucherTypeID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.VoucherTypeName, "Voucher Type Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.VoucherTypeName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note, "Note")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+            <div class="CustombuttonTwoParts">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblVoucherType"></table>
+                <div id="VoucherTypePager"></div>
+            </div>
+        </div>
+    </div>
+    
+}
+

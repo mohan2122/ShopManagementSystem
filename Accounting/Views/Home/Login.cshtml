@@ -1,0 +1,40 @@
+﻿@model Repository.tblUserReg
+@{
+    Layout = null;
+}
+
+<link href="~/Content/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/ApplicationJS/Login.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Login</div>
+    <div class="MainDiv">
+        <div class="LeftPart" style="background-color:Background; color:white; margin: 190px 500px 0px; width: 360px; height: 115px; padding:50px; border: solid 2px #0094ff">
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UserID, "User Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.UserID, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Password, "Password")
+                </div>
+                <div>
+                   @Html.PasswordFor(m => m.Password, new { @class = "required" })
+                </div>
+            </div>
+            <div class="CustombuttonOnePart" style="position:relative;left:44px">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Login" id="btnLogin" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button"
+                    value="Cancel" id="btnCancel" />
+            </div>
+        </div>
+    </div> 
+}

@@ -1,0 +1,58 @@
+﻿@model Repository.AccGroup
+@{
+    ViewBag.Title = "Account Group";
+}
+
+<script src="~/Scripts/ApplicationJS/Accounting_financial/AccGroup.js"></script>
+
+@using (@Html.BeginForm())
+{ <div class="FormName">Account Group</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.AccGroupID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.CompanyID, "Company Name")
+                </div>
+                <div class="RightColumnDdl" style="padding-top: 5px;">
+                    @Html.DropDownListFor(m => m.CompanyID, (SelectList)ViewData["VdCompanyList"], "--------Choose Company-----------")
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AccTypeID, "Account Type")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.AccTypeID, (SelectList)ViewData["VdAccList"], "------Choose Account Type-------")
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.AccGroupName, "Account Group Name")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.AccGroupName, new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Note)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Note)
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAccGroup"></table>
+                <div id="AccGroupPager"></div>
+            </div>
+        </div>
+    </div>
+}
+

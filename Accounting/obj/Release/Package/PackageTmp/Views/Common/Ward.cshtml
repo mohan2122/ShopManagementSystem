@@ -1,0 +1,41 @@
+﻿@model Repository.tblWard
+
+@{
+    ViewBag.Title = "Ward";
+}
+<script src="~/Scripts/ApplicationJS/Common/Ward.js"></script>
+
+@using (@Html.BeginForm())
+{    <div class="FormName">Ward Info</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.WardID)
+           <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.UnionID, "Union ID ")
+                </div>
+                <div class="RightColumnDdl">
+                    @Html.DropDownListFor(m => m.UnionID, (SelectList)ViewData["VdUnionList"], " --Choose Union-- ")
+
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.WardName, "Ward Name  ")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.WardName)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblWardInfo"></table>
+                <div id="WardInfoPager"></div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,34 @@
+﻿@model Repository.ProductCategory
+@{
+    ViewBag.Title = "ProductCategory";
+}
+
+<script src="~/Scripts/ApplicationJS/Pos_Setup/ProductCategory.js"></script>
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Product Category</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            @Html.HiddenFor(m => m.ProductCategoryID)
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.ProductCategory1, "Product Category")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.ProductCategory1, new { @class = "required" })
+                </div>
+            </div>
+
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+
+            <div>
+                <table id="tblProductCategory"></table>
+                <div id="ProductCategoryPager"></div>
+            </div>
+        </div>
+    </div> 
+}

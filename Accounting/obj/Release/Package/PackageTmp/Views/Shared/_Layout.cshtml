@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - DSL Accounting Information System</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/ui.jqgrid.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery/i18n/grid.locale-en.js"></script>
+    <script src="~/Scripts/jquery/jquery.jqGrid.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.8.20.min.js"></script>
+
+</head>
+<body>
+    @* <header>
+        <div style="height: 75px; background-color: #000000;">
+        </div>
+        <div style="height: 25px; background-color: #D3D3D3;">
+        </div>
+    </header>
+    <div id="body">
+        <div style="width: 100%">
+            <div style="min-height: 40%; float: left; width: 20.5%; padding-left: 5px; padding-top: 2px; padding-bottom: 10px;">
+                @Html.Partial("AdminMenu")
+            </div>
+
+            <div style="min-height: 40%; border-left: 1px solid #206C9F; width: 77.5%; float: left; padding-left: 10px; padding-top: 2px; padding-bottom: 10px;">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - DSL Accounting Information System</p>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)*@
+
+
+    <div id="container">
+        <div id="banner">
+            <div style="float: left; padding: 2px;">
+                @*<img src="images/bond.png" />*@
+            </div>
+            <div style="float: left;">
+                @*<img src="images/software-name.png" />*@
+            </div>
+        </div>
+        <div id="navcontainer">
+            <ul id="navlist">
+                <li><b>User Code :</b></li>
+                <li><b>Designation :</b></li>
+            </ul>
+            <span style="float: right"></span>
+        </div>
+        <div id="sidebar">
+            @Html.Partial("AdminMenu")
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+        <div id="footer">
+            <div align="center">
+                <div>Copyright &copy; 2014 Digicon, Dhaka.</div>
+                <div>
+                    This System is designed and developed by Deshi Systems Ltd. <a
+                        href="http://www.deshisysltd.com/" target="_blank"><strong>(DSL)</strong></a>
+                </div>
+            </div>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </div>
+
+
+
+</body>
+</html>

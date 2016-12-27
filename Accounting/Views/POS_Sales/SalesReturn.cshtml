@@ -1,0 +1,112 @@
+﻿@model Repository.MainSaleReturn
+@{
+    ViewBag.Title = "SalesReturn";
+}
+
+@using (@Html.BeginForm())
+{
+    <div class="FormName">Sales Return</div>
+    <div class="MainDiv">
+        <div class="LeftPart">
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.salesReturn.InvoiceDate, "Return Date")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.salesReturn.InvoiceDate)
+                </div>
+            </div>
+
+            @*<div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.supplier.SupplierName, "Supplier Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.supplier.SupplierName, (SelectList)ViewData["VdListSuplier"], "--------Choose Supplier-----------", new { @class = "required" })
+                </div>
+            </div>*@
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.sale.SalesID, "Sales Inv.ID")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.sale.SalesID, (SelectList)ViewData["VdListSale"], "--------Choose SaleID-----------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.salesReturn.SalesReturnInvoice, "SalesReturn Invoice")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.salesReturn.SalesReturnInvoice)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Description, "Description")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Description)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.productInfo.ProductName, "Product Name")
+                </div>
+                <div>
+                    @Html.DropDownListFor(m => m.productInfo.ProductName, (SelectList)ViewData["VdListProduct"], "--------Choose Product---------", new { @class = "required" })
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Quantity, "Quantity")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Quantity)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Price, "Price")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Price)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Discount, "Discount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Discount)
+                </div>
+            </div>
+
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.TotalDiscount, "Total Discount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.TotalDiscount)
+                </div>
+            </div>
+            <div class="LeftRow">
+                <div class="LeftColumn">
+                    @Html.LabelFor(m => m.Amount, "Amount")
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Amount)
+                </div>
+            </div>
+            <div class="CustombuttonOnePart">
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Save" id="btnSave" />
+                <input class="ac-inputs ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Update" id="btnUpdate" />
+            </div>
+            <div>
+                <table id="tblAccLedger"></table>
+                <div id="AccLedgerPager"></div>
+            </div>
+        </div>
+    </div>      
+}
+
